@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background: #116466;
 }
 
 #header .logo {
@@ -544,7 +544,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #37517e;
+  color: #075557;
 }
 
 .section-title h2::before {
@@ -670,7 +670,7 @@ section {
 .why-us .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #37517e;
+  color: #116466;
 }
 
 .why-us .content h4 {
@@ -1825,6 +1825,32 @@ section {
 
 #footer .credits a {
   transition: 0.3s;
+}
+
+#app-messenger, #app-whatsapp{
+	position: fixed;
+	right: 10px;
+	bottom: 25px;
+	width: 60px;
+	z-index: 1000;
+	display: none;
+}
+#app-whatsapp{
+	bottom: 450px;
+	display: block;
+}
+#app-whatsapp img{
+	width: 100%;
+	height: auto;
+}
+#app-messenger i, #app-whatsapp i{
+	font-size: 63px;
+}
+#app-whatsapp i{
+	color: #1ebea5;
+}
+#app-messenger i{
+	color: #0084ff;	
 }
 
 @media (max-width: 768px) {

@@ -1,6 +1,35 @@
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v9.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="104263811077162"
+theme_color="#44bec7"
+logged_in_greeting="Hola!, como podemos ayudarte?"
+logged_out_greeting="Hola!, como podemos ayudarte?">
+</div>
 <!-- ======= Footer ======= -->
 <footer id="footer">
-
+  <a id="app-whatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=5213334921985&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?">
+    <i class="bx bxl-whatsapp"></i>
+  </a>
+</a>
     <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
@@ -18,7 +47,7 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
+          
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>Arsha</h3>
             <p>
@@ -84,4 +113,5 @@
 <!-- End Footer -->
 <!-- Preloader -->
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  
     <div id="preloader"></div>
