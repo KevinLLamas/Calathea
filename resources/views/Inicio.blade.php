@@ -6,15 +6,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                    <h1>La Mejor Solución Para Tu Negocio</h1>
-                    <h2>Somos un equipo a tu medida</h2>
+                    <h1>Desarrollo de soluciones tecnologicas</h1>
+                    <h2>a la medida de tu necesidad.</h2>
                     <div class="d-lg-flex">
                         <a href="#about" class="btn-get-started scrollto">Empezar</a>
                         <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Ver Video <i class="icofont-play-alt-2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                <img src="{{asset('assets/img/hero-img.png')}}" class="img-fluid animated" alt="">
+                <img src="{{asset('assets/img/img-tecnologia.png')}}" class="img-fluid animated" alt="">
                 </div>
             </div>
         </div>
@@ -27,22 +27,22 @@
         <div class="container">
             <div class="row" data-aos="zoom-in">
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{asset('assets/img/clients/client-1.png')}}" class="img-fluid" alt="">
+                    <img src="{{asset('assets/img/tecnologias/img-html.png')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{asset('assets/img/clients/client-2.png')}}" class="img-fluid" alt="">
+                    <img src="{{asset('assets/img/tecnologias/img-laravel.png')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{asset('assets/img/clients/client-3.png')}}" class="img-fluid" alt="">
+                    <img src="{{asset('assets/img/tecnologias/img-bootstrap.png')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{asset('assets/img/clients/client-4.png')}}" class="img-fluid" alt="">
+                    <img src="{{asset('assets/img/tecnologias/img-js.png')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{asset('assets/img/clients/client-5.png')}}" class="img-fluid" alt="">
+                    <img src="{{asset('assets/img/tecnologias/img-react.png')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{asset('assets/img/clients/client-6.png')}}" class="img-fluid" alt="">
+                    <img src="{{asset('assets/img/tecnologias/img-sharp.png')}}" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
