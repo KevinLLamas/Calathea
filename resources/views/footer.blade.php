@@ -48,18 +48,17 @@ logged_out_greeting="Hola!, como podemos ayudarte?">
       <div class="container">
         <div class="row">
           
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Arsha</h3>
+          <div class="col-lg-9 col-md-6 footer-contact">
+            <h3>StickySoftware</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
+              Guadalajara, Jalisco<br>
+              Mexico <br><br>
+              <strong>Telefono:</strong> 3334921985<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div hidden class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
@@ -70,7 +69,7 @@ logged_out_greeting="Hola!, como podemos ayudarte?">
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div hidden class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -82,8 +81,8 @@ logged_out_greeting="Hola!, como podemos ayudarte?">
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <h4>Nuestras redes sociales</h4>
+            <p>Siguenos en las redes</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -99,14 +98,14 @@ logged_out_greeting="Hola!, como podemos ayudarte?">
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>StickySoftware</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
       </div>
     </div>
   </footer>
