@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #47b2e4;
+  color: #116466;
 }
 
 .nav-menu .drop-down > a:after {
@@ -317,14 +317,14 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #37517e;
+  color: #116466;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #47b2e4;
+  color: #116466;
   text-decoration: none;
 }
 
@@ -1829,26 +1829,32 @@ section {
 
 #app-messenger, #app-whatsapp{
 	position: fixed;
-	right: 10px;
-	bottom: 25px;
-	width: 60px;
+	right: 5px;
+	bottom: 20px;
+	width: 58px;
 	z-index: 1000;
 	display: none;
 }
 #app-whatsapp{
+  font-size: 30px;
 	bottom: 450px;
-	display: block;
+  display: block;
+  background-color:#be1e26;
+  color: #fff;
+  line-height: 1;
+  padding: 7px 0;
+  margin-right: 1px;
+  border-radius: 50%;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  transition: 0.3s;
 }
-#app-whatsapp img{
-	width: 100%;
-	height: auto;
-}
-#app-messenger i, #app-whatsapp i{
+
+#app-messenger i{
 	font-size: 63px;
 }
-#app-whatsapp i{
-	color: #1ebea5;
-}
+
 #app-messenger i{
 	color: #0084ff;	
 }

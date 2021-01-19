@@ -9,7 +9,7 @@
     <nav class="nav-menu d-none d-lg-block">
       <ul>
         <li class="active"><a href="#hero">Home</a></li>
-        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#about">Nosotros</a></li>
         <li><a href="#services">Servicios</a></li>
         <li><a href="#portfolio">Portafolio</a></li>
         <li><a href="#team">Equipo</a></li>

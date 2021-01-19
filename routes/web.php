@@ -19,3 +19,5 @@ Route::get('/', function () {
 Route::get('inicio', function () {
     return view('inicio2');
 });
+
+Route::get('send_email', 'InicioController@SendMail');

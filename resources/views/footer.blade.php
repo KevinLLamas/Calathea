@@ -30,7 +30,7 @@ logged_out_greeting="Hola!, como podemos ayudarte?">
     <i class="bx bxl-whatsapp"></i>
   </a>
 </a>
-    <div class="footer-newsletter">
+    <div hidden class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">

@@ -54,28 +54,26 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-            <h2>About Us</h2>
+            <h2>Nosotros</h2>
             </div>
 
             <div class="row content">
                 <div class="col-lg-6">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
+                        Somos una startup mexicana comprometida a resolver las necesidades personales y de negocio de nuestros clientes, por medio de la innovación y la tecnología.
                     </p>
                     <ul>
-                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                        <li><i class="ri-check-double-line"></i> Desarrollo de ingeniería para la resolución de sus necesidades.</li>
+                        <li><i class="ri-check-double-line"></i> Servicio justo, y a la medida de su idea, negocio.</li>
+                        <li><i class="ri-check-double-line"></i> Usamos tecnologias a la vanguardía y totalmente competentes a nivel mundial.</li>
                     </ul>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0">
                     <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                        ¿Tiene una idea?, podemos ayudarle a realizarla por medio de las mas modernas herramientas tecnologicas.
                     </p>
-                    <a href="#" class="btn-learn-more">Learn More</a>
+                    <a hidden href="#" class="btn-learn-more">Más Información</a>
+                </div>
                 </div>
             </div>
         </div>
@@ -88,34 +86,48 @@
             <div class="row">
                 <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
                     <div class="content">
-                    <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                    </p>
+                    <h3>Nuestra metodología para <strong> el desarrollo de los proyectos</strong></h3>
+                    <p>Como norma para una completa satisfacción de nuestros clientes, utilizamos la siguiente metodología para el desarrollo los proyectos:</p>
                     </div>
                     <div class="accordion-list">
                         <ul>
                             <li>
-                                <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> Requerimientos <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                                 <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
                                     <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                        Levantamos tus requerimientos, escuchamos tu idea y/o necesidad. Y se maneja una retroalimentación en conjunto con nuestros expertos para pulir la idea y comenzar un punto claro de partida.
                                     </p>
                                 </div>
                             </li>
                             <li>
-                                <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Analisis y planeación <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                                 <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
                                     <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                        Se analizan los requerimientos para desarrollar el plan de trabajo, y la mejor forma de llevarlo a cabo.
                                     </p>
                                 </div>
                             </li>
                             <li>
-                                <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Propuesta <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                                 <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
                                     <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                        Se elabora una propuesta inicial, y se te presenta.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>04</span> Desarrollo <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                                    <p>
+                                        Una vez obtenido el visto bueno de nuestra propuesta comenzamos con el desarrollo del producto.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>04</span> Implementación <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                                    <p>
+                                        Realizamos la publicación y/o entrga del producto final
                                     </p>
                                 </div>
                             </li>
@@ -126,6 +138,46 @@
             </div>
         </div>
         </section><!-- End Why Us Section -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                <h2>Servicios</h2>
+                <p>Estos son algunos de los servicios que ofrecemos, desarrollados con las mejores tecnologías y totalmente a tu necesidad.</p>
+                </div>
+                <div class="row">
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                        <h4><a href="">Desarrollo a tu medida</a></h4>
+                        <p>Si tienes una idea, o tu negocio necesita de un software especial para automatizar el flujo de trabajo o cualquier otra necesidad, podemos hacerlo por ti. Analisis, Planeación, Desarollo y puesta en marcha del producto.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-file"></i></div>
+                        <h4><a href="">Desarollo de paginas WEB</a></h4>
+                        <p>Desarrollamos paginas WEB según tu necesidad, desde una sencilla pagina de presentación de marca, hasta una pagina para la administración y/o automatizacion del flujo de trabajo de tu negocio.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-desktop"></i></div>
+                        <h4><a href="">Programas de Escrítorio</a></h4>
+                        <p>Desarrollo de programas de escritorío de acuerdo a sus necesidades. Haga crecer su negocio y automatice su flujo de trabajo.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-mobile"></i></div>
+                        <h4><a href="">Apps</a></h4>
+                        <p>Creación de Aplicaciones Moviles para que tu negocio y/o idea llegue también a aquellos sectores mas jovenes de la población.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section><!-- End Services Section -->
 
         <!-- ======= Skills Section ======= -->
         <section id="skills" class="skills">
@@ -171,45 +223,7 @@
         </div>
         </section><!-- End Skills Section -->
 
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services section-bg">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                <h2>Services</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-                <div class="row">
-                <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                        <h4><a href="">Lorem Ipsum</a></h4>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4><a href="">Sed ut perspici</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4><a href="">Magni Dolores</a></h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-layer"></i></div>
-                        <h4><a href="">Nemo Enim</a></h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section><!-- End Services Section -->
+        
 
         <!-- ======= Cta Section ======= -->
         <section id="cta" class="cta">
@@ -230,7 +244,7 @@
         <section id="portfolio" class="portfolio">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2>Portfolio</h2>
+                    <h2>Portafolio</h2>
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
                 <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -403,7 +417,7 @@
         </section><!-- End Team Section -->
 
         <!-- ======= Pricing Section ======= -->
-        <section id="pricing" class="pricing">
+        <section hidden id="pricing" class="pricing">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -458,7 +472,7 @@
         </section><!-- End Pricing Section -->
 
         <!-- ======= Frequently Asked Questions Section ======= -->
-        <section id="faq" class="faq section-bg">
+        <section hidden id="faq" class="faq section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                 <h2>Frequently Asked Questions</h2>
