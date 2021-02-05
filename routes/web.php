@@ -20,4 +20,4 @@ Route::get('inicio', function () {
     return view('inicio2');
 });
 
-Route::get('send_email', 'InicioController@SendMail');
+Route::post('send_email', 'ContactController@contactSubmit')->name('contact.submit');
