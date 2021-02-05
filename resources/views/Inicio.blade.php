@@ -8,9 +8,9 @@
                 <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
                     <h1>Desarrollo de soluciones tecnologicas</h1>
                     <h2>a la medida de tu necesidad.</h2>
-                    <div class="d-lg-flex">
-                        <a href="#about" class="btn-get-started scrollto">Empezar</a>
-                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Ver Video <i class="icofont-play-alt-2"></i></a>
+                    <div hidden class="d-lg-flex">
+                        <a hidden href="#about" class="btn-get-started scrollto">Empezar</a>
+                        <a hidden href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Ver Video <i class="icofont-play-alt-2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -186,7 +186,7 @@
                 <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
                     <img src="{{asset('assets/img/skills.png')}}" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+                <div hidden class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
                     <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
                     <p class="font-italic">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -226,7 +226,7 @@
         
 
         <!-- ======= Cta Section ======= -->
-        <section id="cta" class="cta">
+        <section hidden id="cta" class="cta">
         <div class="container" data-aos="zoom-in">
             <div class="row">
                 <div class="col-lg-9 text-center text-lg-left">
@@ -241,7 +241,7 @@
         </section><!-- End Cta Section -->
 
         <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio">
+        <section hidden id="portfolio" class="portfolio">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>Portafolio</h2>
@@ -344,17 +344,17 @@
         <section id="team" class="team section-bg">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
-            <h2>Team</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <h2>Equipo</h2>
+            <p hidden> Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
                         <div class="pic"><img src="{{asset('assets/img/team/team-1.jpg')}}" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Walter White</h4>
-                            <span>Chief Executive Officer</span>
-                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                            <h4>Kevin Llamas</h4>
+                            <span>Desarrollador</span>
+                            <p>Experiencia en el area de Desarrollo Web, IA, Innovacion, Integracion.</p>
                             <div class="social">
                             <a href=""><i class="ri-twitter-fill"></i></a>
                             <a href=""><i class="ri-facebook-fill"></i></a>
@@ -366,11 +366,11 @@
                 </div>
                 <div class="col-lg-6 mt-4 mt-lg-0">
                     <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="pic"><img src="{{asset('assets/img/team/team-2.jpg')}}" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="{{asset('assets/img/team/AL.jpg')}}" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Sarah Jhonson</h4>
-                            <span>Product Manager</span>
-                            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                            <h4>Armando Lara</h4>
+                            <span>Desarrollador</span>
+                            <p>Experiencia en el area de Desarrollo Web, IA, Innovacion, Integracion, Gestion de Proyectos.</p>
                             <div class="social">
                             <a href=""><i class="ri-twitter-fill"></i></a>
                             <a href=""><i class="ri-facebook-fill"></i></a>
@@ -380,7 +380,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-4">
+                <div hidden class="col-lg-6 mt-4">
                     <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
                         <div class="pic"><img src="{{asset('assets/img/team/team-3.jpg')}}" class="img-fluid" alt=""></div>
                         <div class="member-info">
@@ -396,7 +396,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-4">
+                <div hidden class="col-lg-6 mt-4">
                     <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
                     <div class="pic"><img src="{{asset('assets/img/team/team-4.jpg')}}" class="img-fluid" alt=""></div>
                         <div class="member-info">
@@ -530,7 +530,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Contact</h2>
+                    <h2>Contacto</h2>
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
                 <div class="row">
@@ -555,35 +555,36 @@
                         </div>
                     </div>
                     <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                            <label for="name">Your Name</label>
-                            <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validate"></div>
+                        <form action="{{route('contact.submit')}}" method="post" role="form">
+                            @csrf
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validate"></div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label for="name">Your Email</label>
+                                <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validate"></div>
+                                </div>
                             </div>
-                            <div class="form-group col-md-6">
-                            <label for="name">Your Email</label>
-                            <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validate"></div>
+                            <div class="form-group">
+                                <label for="name">Subject</label>
+                                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validate"></div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Subject</label>
-                            <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validate"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Message</label>
-                            <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                            <div class="validate"></div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
+                            <div class="form-group">
+                                <label for="name">Message</label>
+                                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
                         </form>
                     </div>
                 </div>
