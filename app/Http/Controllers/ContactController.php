@@ -13,12 +13,14 @@ class ContactController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'subject' => $request->subject,
-            'message' => $request->message,
+            'msg' => $request->msg,
         ], function($mail) use($request){
             $mail->from(env('MAIL_FROM_ADDRESS'), $request->name);
             $mail->to($request->email)->subject($request->subject);
         });
 
-        return $request;
+        return \response()->json([
+            'ok'=> true,
+        ]);
     }
 }
