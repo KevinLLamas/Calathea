@@ -131,6 +131,12 @@
       timeout: 40000
     }).done( function(msg){
       if (msg.ok) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Tu correo ah sido enviado, en breve nos comunicaremos contigo.',
+          showConfirmButton: false,
+          timer: 4000
+        });
         this_form.find('.loading').slideUp();
         this_form.find('.sent-message').slideDown();
         this_form.find("input:not(input[type=submit]), textarea").val('');

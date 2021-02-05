@@ -35,6 +35,7 @@
         @yield('content') {{-- Cotenido de la pagina --}}
         @include('footer') {{-- Menu inferior --}}
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
