@@ -130,7 +130,7 @@
       data: data,
       timeout: 40000
     }).done( function(msg){
-      if (msg.trim() == 'OK') {
+      if (msg.ok) {
         this_form.find('.loading').slideUp();
         this_form.find('.sent-message').slideDown();
         this_form.find("input:not(input[type=submit]), textarea").val('');
