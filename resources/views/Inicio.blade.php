@@ -536,23 +536,24 @@
                 <div class="row">
                     <div class="col-lg-5 d-flex align-items-stretch">
                         <div class="info">
-                        <!--div class="address">
-                            <i class="icofont-google-map"></i>
-                            <h4>Location:</h4>
-                            <p>A108 Adam Street, New York, NY 535022</p>
-                        </div-->
-                        <div class="email">
-                            <i class="icofont-envelope"></i>
-                            <h4>Correo:</h4>
-                            <p>contacto@stickysoftware.com.mx</p>
+                            <div class="facebook mb-5">
+                                <i class="ri-facebook-fill"></i>
+                                <h4>Página de Facebook:</h4>
+                                <a class="ml-3" href="https://www.facebook.com/StickySoftware-100439908749733">StickySoftware</a>
+                            </div>
+                            <div class="email mb-5">
+                                <i class="icofont-envelope"></i>
+                                <h4>Correo:</h4>
+                                <a class="ml-3" href="mailto:contacto@stickysoftware.com.mx">contacto@stickysoftware.com.mx</a>
+                            </div>
+                            <div class="phone ">
+                                <i class="icofont-phone"></i>
+                                <h4>Celular:</h4>
+                                <p>+52 33-34-92-19-85</p>
+                            </div>
+                            
+                            
                         </div>
-                        <div class="phone">
-                            <i class="icofont-phone"></i>
-                            <h4>Celular:</h4>
-                            <p>+52 33-34-92-19-85</p>
-                        </div>
-                        <!--iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-                        --></div>
                     </div>
                     <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
                         <form action="{{route('contact.submit')}}" method="post" role="form" class="php-email-form">
@@ -576,13 +577,13 @@
                             </div>
                             <div class="form-group">
                                 <label for="name">Mensaje</label>
-                                <textarea type="text" class="form-control" name="msg" id="msg" data-rule="minlen:8" data-msg="Ingresa al menos 8 letras" placeholder="Explica brevemente el proyecto" > </textarea>
-                                <div class="validate"></div>
+                                <textarea type="text" class="form-control" name="msg" id="msg" data-rule="minlen:8" data-msg="Ingresa al menos 8 letras" placeholder="Explica brevemente el proyecto" ></textarea>
+                                <div class="validate" ></div>
                             </div>
                             <div class="mb-3">
                                 <div class="loading">Loading</div>
                                 <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                <div class="sent-message">Su mensaje ha sido enviado con éxito.</div>
                             </div>
                             <div class="text-center"><button type="submit">Enviar</button></div>
                         </form>

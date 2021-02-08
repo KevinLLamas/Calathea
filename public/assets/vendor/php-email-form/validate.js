@@ -133,7 +133,7 @@
       if (msg.ok) {
         Swal.fire({
           icon: 'success',
-          title: 'Tu correo ah sido enviado, en breve nos comunicaremos contigo.',
+          title: 'Tu correo ha sido enviado.',
           showConfirmButton: false,
           timer: 4000
         });
