@@ -1,5 +1,5 @@
 <!-- ======= Header ======= -->
-<header id="header" class="fixed-top ">
+<header id="header" class="fixed-top "><meta charset="gb18030">
   <div class="container d-flex align-items-center">
 
     <h1 class="logo mr-auto"><a href="index.html">StickySoftware</a></h1>
@@ -11,9 +11,9 @@
         <li class="active"><a href="#hero">Home</a></li>
         <li><a href="#about">Nosotros</a></li>
         <li><a href="#services">Servicios</a></li>
-        <li><a href="#portfolio">Portafolio</a></li>
+        <li hidden><a href="#portfolio">Portafolio</a></li>
         <li><a href="#team">Equipo</a></li>
-        <li class="drop-down"><a href="">Sesión</a>
+        <li hidden class="drop-down"><a href="">Sesión</a>
           <ul>
             <li><a href="#">Drop Down 1</a></li>
             <li class="drop-down"><a href="#">Deep Drop Down</a>
