@@ -350,16 +350,16 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="pic"><img src="{{asset('assets/img/team/team-1.jpg')}}" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="{{asset('assets/img/team/KLL.jpg')}}" class="img-fluid" alt=""></div>
                         <div class="member-info">
                             <h4>Kevin Llamas</h4>
                             <span>Desarrollador</span>
                             <p>Experiencia en el area de Desarrollo Web, IA, Innovacion, Integracion.</p>
                             <div class="social">
-                            <a href=""><i class="ri-twitter-fill"></i></a>
-                            <a href=""><i class="ri-facebook-fill"></i></a>
-                            <a href=""><i class="ri-instagram-fill"></i></a>
-                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                            <a href="https://twitter.com/SoftwareSticky"><i class="ri-twitter-fill"></i></a>
+                            <a href="https://www.facebook.com/StickySoftware-100439908749733"><i class="ri-facebook-fill"></i></a>
+                            <a href="https://www.instagram.com/stickysofware/"><i class="ri-instagram-fill"></i></a>
+                            <a href="https://www.linkedin.com/in/kevin-llamas-alcalá-83211a206/"> <i class="ri-linkedin-box-fill"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -372,9 +372,9 @@
                             <span>Desarrollador</span>
                             <p>Experiencia en el area de Desarrollo Web, IA, Innovacion, Integracion, Gestion de Proyectos.</p>
                             <div class="social">
-                            <a href=""><i class="ri-twitter-fill"></i></a>
-                            <a href=""><i class="ri-facebook-fill"></i></a>
-                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href="https://twitter.com/SoftwareSticky"><i class="ri-twitter-fill"></i></a>
+                            <a href="https://www.facebook.com/StickySoftware-100439908749733"><i class="ri-facebook-fill"></i></a>
+                            <a href="https://www.instagram.com/stickysofware/"><i class="ri-instagram-fill"></i></a>
                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
                             </div>
                         </div>
@@ -534,7 +534,7 @@
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8 d-flex align-items-stretch">
+                    <div class="col-lg-5 d-flex align-items-stretch">
                         <div class="info">
                         <!--div class="address">
                             <i class="icofont-google-map"></i>
@@ -552,9 +552,9 @@
                             <p>+52 33-34-92-19-85</p>
                         </div>
                         <!--iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-                        </div-->
+                        --></div>
                     </div>
-                    <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
+                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
                         <form action="{{route('contact.submit')}}" method="post" role="form" class="php-email-form">
                             @csrf
                             <div class="row">
@@ -579,7 +579,11 @@
                                 <textarea type="text" class="form-control" name="msg" id="msg" data-rule="minlen:8" data-msg="Ingresa al menos 8 letras" placeholder="Explica brevemente el proyecto" > </textarea>
                                 <div class="validate"></div>
                             </div>
-                            
+                            <div class="mb-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
                             <div class="text-center"><button type="submit">Enviar</button></div>
                         </form>
                     </div>
@@ -587,6 +591,7 @@
             </div>
         </section>
         <!-- End Contact Section -->
+        
     </main>
     <!-- End #main -->
 @endsection
