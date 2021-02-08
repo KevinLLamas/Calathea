@@ -1,29 +1,30 @@
 <!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v9.0'
-    });
-  };
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
 
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- Your Chat Plugin code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="104263811077162"
-theme_color="#44bec7"
-logged_in_greeting="Hola!, como podemos ayudarte?"
-logged_out_greeting="Hola!, como podemos ayudarte?">
-</div>
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="100439908749733"
+  theme_color="#0A7CFF"
+  logged_in_greeting="Hola! Como podemos ayudarte?"
+  logged_out_greeting="Hola! Como podemos ayudarte?">
+      </div>
+
 <!-- ======= Footer ======= -->
 <footer id="footer">
   <a id="app-whatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=5213334921985&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?">
@@ -54,7 +55,7 @@ logged_out_greeting="Hola!, como podemos ayudarte?">
               Guadalajara, Jalisco<br>
               Mexico <br><br>
               <strong>Telefono:</strong> 3334921985<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Email:</strong> contacto@stickysoftware.com.mx<br>
             </p>
           </div>
 

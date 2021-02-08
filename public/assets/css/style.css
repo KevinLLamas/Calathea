@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   z-index: 99999;
 }
@@ -1830,25 +1830,25 @@ section {
 
 #app-messenger, #app-whatsapp{
 	position: fixed;
-	right: 5px;
-	bottom: 20px;
+	right: 2px;
+	bottom: 10px;
 	width: 58px;
 	z-index: 1000;
 	display: none;
 }
 #app-whatsapp{
-  font-size: 30px;
-	bottom: 450px;
+  font-size: 45px;
+    bottom: 24px;
   display: block;
-  background-color:#be1e26;
+  background-color:#1ebe26;
   color: #fff;
   line-height: 1;
   padding: 7px 0;
-  margin-right: 1px;
+  margin-right: 20px;
   border-radius: 50%;
   text-align: center;
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
   transition: 0.3s;
 }
 

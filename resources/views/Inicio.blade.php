@@ -116,16 +116,16 @@
                                 </div>
                             </li>
                             <li>
-                                <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>04</span> Desarrollo <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                                <a data-toggle="collapse" href="#accordion-list-4" class="collapsed"><span>04</span> Desarrollo <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="accordion-list-4" class="collapse" data-parent=".accordion-list">
                                     <p>
                                         Una vez obtenido el visto bueno de nuestra propuesta comenzamos con el desarrollo del producto.
                                     </p>
                                 </div>
                             </li>
                             <li>
-                                <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>04</span> Implementación <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                                <a data-toggle="collapse" href="#accordion-list-5" class="collapsed"><span>05</span> Implementación <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="accordion-list-5" class="collapse" data-parent=".accordion-list">
                                     <p>
                                         Realizamos la publicación y/o entrga del producto final
                                     </p>
@@ -531,7 +531,7 @@
 
                 <div class="section-title">
                     <h2>Contacto</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Envianos un correo por medio de este formulario, y nos pondremos en contacto contigo a la brevedad</p>
                 </div>
                 <div class="row">
                     <div class="col-lg-5 d-flex align-items-stretch">
