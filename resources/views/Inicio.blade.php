@@ -127,7 +127,7 @@
                                 <a data-toggle="collapse" href="#accordion-list-5" class="collapsed"><span>05</span> Implementación <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                                 <div id="accordion-list-5" class="collapse" data-parent=".accordion-list">
                                     <p>
-                                        Realizamos la publicación y/o entrga del producto final
+                                        Realizamos la publicación y/o entrega del producto final
                                     </p>
                                 </div>
                             </li>
@@ -355,11 +355,12 @@
                             <h4>Kevin Llamas</h4>
                             <span>Desarrollador</span>
                             <p>Experiencia en el area de Desarrollo Web, IA, Innovacion, Integracion.</p>
+                            <p>Desarrollador de SW en Secretaria de Educación Jalisco.</p>
                             <div class="social">
-                            <a href="https://twitter.com/SoftwareSticky"><i class="ri-twitter-fill"></i></a>
-                            <a href="https://www.facebook.com/StickySoftware-100439908749733"><i class="ri-facebook-fill"></i></a>
-                            <a href="https://www.instagram.com/stickysofware/"><i class="ri-instagram-fill"></i></a>
-                            <a href="https://www.linkedin.com/in/kevin-llamas-alcalá-83211a206/"> <i class="ri-linkedin-box-fill"></i> </a>
+                            <a target="_blanck" href="https://twitter.com/SoftwareSticky"><i class="ri-twitter-fill"></i></a>
+                            <a target="_blanck" href="https://www.facebook.com/StickySoftware-100439908749733"><i class="ri-facebook-fill"></i></a>
+                            <a target="_blanck" href="https://www.instagram.com/stickysofware/"><i class="ri-instagram-fill"></i></a>
+                            <a target="_blanck" href="https://www.linkedin.com/in/kevin-llamas-alcalá-83211a206/"> <i class="ri-linkedin-box-fill"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -370,12 +371,13 @@
                         <div class="member-info">
                             <h4>Armando Lara</h4>
                             <span>Desarrollador</span>
-                            <p>Experiencia en el area de Desarrollo Web, IA, Innovacion, Integracion, Gestion de Proyectos.</p>
+                            <p>Experiencia en el area de Desarrollo Web, Innovacion, Integracion, Gestion de Proyectos.</p>
+                            <p>Desarrollador de SW en Secretaria de Educación Jalisco.</p>
                             <div class="social">
-                            <a href="https://twitter.com/SoftwareSticky"><i class="ri-twitter-fill"></i></a>
-                            <a href="https://www.facebook.com/StickySoftware-100439908749733"><i class="ri-facebook-fill"></i></a>
-                            <a href="https://www.instagram.com/stickysofware/"><i class="ri-instagram-fill"></i></a>
-                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                            <a target="_blanck" href="https://twitter.com/SoftwareSticky"><i class="ri-twitter-fill"></i></a>
+                            <a target="_blanck" href="https://www.facebook.com/StickySoftware-100439908749733"><i class="ri-facebook-fill"></i></a>
+                            <a target="_blanck" href="https://www.instagram.com/stickysofware/"><i class="ri-instagram-fill"></i></a>
+                            <a target="_blanck" href="https://www.linkedin.com/in/josé-armando-lara-canchola-945727180/"> <i class="ri-linkedin-box-fill"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -539,19 +541,23 @@
                             <div class="facebook mb-5">
                                 <i class="ri-facebook-fill"></i>
                                 <h4>Página de Facebook:</h4>
-                                <a class="ml-3" href="https://www.facebook.com/StickySoftware-100439908749733">StickySoftware</a>
+                                <a class="ml-3" target="_blanck" href="https://www.facebook.com/StickySoftware-100439908749733">StickySoftware</a>
                             </div>
                             <div class="email mb-5">
                                 <i class="icofont-envelope"></i>
                                 <h4>Correo:</h4>
                                 <a class="ml-3" href="mailto:contacto@stickysoftware.com.mx">contacto@stickysoftware.com.mx</a>
                             </div>
-                            <div class="phone ">
+                            <div class="phone mb-5">
                                 <i class="icofont-phone"></i>
                                 <h4>Celular:</h4>
-                                <p>+52 33-34-92-19-85</p>
+                                <a class="ml-3" href="tel:+523334921985">+52 33-34-92-19-85</a>
                             </div>
-                            
+                            <div class="whatsapp ">
+                                <i class="icofont-whatsapp"></i>
+                                <h4>Whatsapp:</h4>
+                                <a class="ml-3" target="_blanck" href="https://api.whatsapp.com/send?phone=5213324254804&amp;text=¡Hola!&nbsp;¿me&nbsp;pueden&nbsp;apoyar?">+52 33-24-25-48-04</a>
+                            </div>
                             
                         </div>
                     </div>
