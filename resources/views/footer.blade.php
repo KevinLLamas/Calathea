@@ -54,7 +54,7 @@
             <p>
               Guadalajara, Jalisco<br>
               Mexico <br><br>
-              <strong>Telefono:</strong> 3334921985<br>
+              <!--strong>Telefono:</strong> 3334921985<br-->
               <strong>Email:</strong> contacto@stickysoftware.com.mx<br>
             </p>
           </div>

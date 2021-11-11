@@ -367,6 +367,23 @@
                 </div>
                 <div class="col-lg-6 mt-4 mt-lg-0">
                     <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="pic"><img src="{{asset('assets/img/team/AP.jpg')}}" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>Alfredo pacheco</h4>
+                            <span>Desarrollador</span>
+                            <p>Experiencia en el area de Desarrollo Web, Innovacion, Integracion, Gestion de Proyectos.</p>
+                            <p>Desarrollador de SW en Secretaria de Educación Jalisco.</p>
+                            <div class="social">
+                            <a target="_blanck"><i class="ri-twitter-fill"></i></a>
+                            <a target="_blanck"><i class="ri-facebook-fill"></i></a>
+                            <a target="_blanck"><i class="ri-instagram-fill"></i></a>
+                            <a target="_blanck"> <i class="ri-linkedin-box-fill"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
                         <div class="pic"><img src="{{asset('assets/img/team/AL.jpg')}}" class="img-fluid" alt=""></div>
                         <div class="member-info">
                             <h4>Armando Lara</h4>
@@ -381,7 +398,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <div hidden class="col-lg-6 mt-4">
                     <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
                         <div class="pic"><img src="{{asset('assets/img/team/team-3.jpg')}}" class="img-fluid" alt=""></div>
@@ -548,11 +565,11 @@
                                 <h4>Correo:</h4>
                                 <a class="ml-3" href="mailto:contacto@stickysoftware.com.mx">contacto@stickysoftware.com.mx</a>
                             </div>
-                            <div class="phone mb-5">
+                            <!--div class="phone mb-5">
                                 <i class="icofont-phone"></i>
                                 <h4>Celular:</h4>
                                 <a class="ml-3" href="tel:+523334921985">+52 33-34-92-19-85</a>
-                            </div>
+                            </div-->
                             <div class="whatsapp ">
                                 <i class="icofont-whatsapp"></i>
                                 <h4>Whatsapp:</h4>
