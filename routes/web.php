@@ -21,3 +21,8 @@ Route::get('inicio', function () {
 });
 
 Route::post('send_email', 'ContactController@contactSubmit')->name('contact.submit');
+
+Route::get('/room_chat', function () {return view('chat');});
+Route::get('/get_mensajes', 'MensajeController@get_mensajes');
+Route::post('/save_mensaje', 'MensajeController@save_mensaje');
+Route::get('/getSession', 'UserController@getSession');
