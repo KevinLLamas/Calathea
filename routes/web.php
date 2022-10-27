@@ -27,4 +27,3 @@ Route::get('/get_mensajes', 'MensajeController@get_mensajes');
 Route::post('/save_mensaje', 'MensajeController@save_mensaje');
 Route::get('/getSession', 'UserController@getSession');
 Route::post('/login', 'UserController@login');
-Route::get('/', function () {return view('login');});
