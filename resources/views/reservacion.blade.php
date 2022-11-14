@@ -23,6 +23,10 @@
             </div>
             
         </section>
+        <input type="hidden" value="{{$fecha}}" name="fecha" id="fecha">
+        <input type="hidden" value="{{$nombre}}" name="nombre" id="nombre">
+        <input type="hidden" value="{{$correo}}" name="correo" id="correo">
+        <input type="hidden" value="{{$paquete}}" name="paquete" id="paquete">
         <section id="cliens" class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -43,8 +47,8 @@
                             <label for="titulo">Correo Cliente: </label>
                             <input type="text" class="form-control" name="correo" id="correo" aria-describedby="helpId" placeholder="Correo persona que reserva" v-model="reservacion.correo">
                             <label for="titulo">Paquete: </label>
-                            <select class="form-control" name="" id="" v-model="reservacion.id_paquete">
-                                <option value="" disabled selected="selected">Elija un paquete</option>
+                            <select v-if="reservacion.paquete != ''"class="form-control" name="" id="" v-model="reservacion.paquete">
+                                <option disabled>Elija un paquete</option>
                                 <option value="1">Paquete 1 Lunes y Martes</option>
                                 <option value="2">Paquete 2 Miercoles y Jueves</option>
                                 <option value="3">Paquete 3 Viernes</option>

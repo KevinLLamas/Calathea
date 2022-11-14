@@ -12,13 +12,17 @@ new Vue({
         reservacion:{
             nombre_persona: '',
             fecha: '',
-            id_paquete: '',
+            paquete: '',
             correo: '',
             es_donfirmada: ''
         },
         paquetes:[]
     },
     created: function(){
+        this.reservacion.fecha = $("#fecha").val();
+        this.reservacion.nombre_persona = $("#nombre").val();
+        this.reservacion.correo = $("#correo").val();
+        this.reservacion.paquete = $("#paquete").val();
         document.addEventListener('DOMContentLoaded', function() {
             
             var calendarEl = document.getElementById('calendar');
@@ -64,21 +68,13 @@ new Vue({
             console.log(event);*/
             
         });
-        this.getPaquetes();
+        //this.paquete = this.no_paquete;
+        //this.getPaquetes();
     },
     methods:{
         handleDateClick: function(arg) {
             alert('date click! ' + arg.dateStr)
           },
-        muestra: function(){
-            
-            var url = 'url';
-            axios.post(url, {
-                var: this.var
-            }).then(response => {
-                console.log(response);
-            });
-        },
         guardarReservacion: function(){
             /*this.reservacion.fecha = $("#fecha").val();
             
@@ -126,6 +122,7 @@ new Vue({
             })*/
         },
         editarReservacion: function(){
+           
             /*axios.post('editar_reservacion', {
                 id: this.reservacion.id,
                 nombre_persona: this.reservacion.nombre_persona,
@@ -167,7 +164,7 @@ new Vue({
                     this.paquetes = response.data.data;
                 }
                 console.log(response);
-            });
+            }); 
         },
         eliminarReservacion: function(){
             /*Swal.fire({

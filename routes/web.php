@@ -19,9 +19,10 @@ Route::get('/', function () {
 Route::get('/panel', function () {
     return view('panel');
 });
-Route::get('/reservacion/{paquete}', function () {
+/*Route::get('/reservacion/{paquete}', function () {
     return view('reservacion');
-});
+});*/
+Route::get('/reservacion/{fecha}/{nombre}/{correo}/{paquete}', 'ReservacionController@redireccion');
 Route::get('inicio', function () {
     return view('inicio2');
 });
