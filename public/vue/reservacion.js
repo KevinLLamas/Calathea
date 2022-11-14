@@ -14,7 +14,8 @@ new Vue({
             fecha: '',
             paquete: '',
             correo: '',
-            es_donfirmada: ''
+            es_donfirmada: '',
+            horario: ''
         },
         paquetes:[]
     },
@@ -23,21 +24,29 @@ new Vue({
         this.reservacion.nombre_persona = $("#nombre").val();
         this.reservacion.correo = $("#correo").val();
         this.reservacion.paquete = $("#paquete").val();
+        this.reservacion.horario = $("#horario").val();
         document.addEventListener('DOMContentLoaded', function() {
             
             var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'dayGridMonth',
+                themeSystem: 'bootstrap5',
                 locale:"es",
+                defaultDate: "2022-11-25",
                 header: {
                     left: 'prev, next, today',
                     center: 'title',
                     right: 'dayGridMonth, timeGridWeek, listWeek'
                 },
+                contentHeight:"auto",
                 events: '/get_reservaciones',
                 selectable:true,
                 selectHelper: true,
+                fixedWeekCount: false,
+                showNonCurrentDates: false,
                 dateClick: function(info) {
+                    $('#fecha').val(info.dateStr);
+                    $("#btn_cambio_fecha").trigger("click");
                    /* $("#btn_llamar_limpiar").trigger("click");
                     $("#btn_abrir_modal").trigger("click");
                     $("#fecha").val(info.dateStr);*/
@@ -60,7 +69,11 @@ new Vue({
                     $('#label_id').text(info.event.id);
                     $("#btn_llamar_llenar").trigger("click");
                     $("#btn_abrir_modal_editar").trigger("click");*/
-                }
+                },
+                /*selectAllow: function(event)
+                {
+                    return moment(event.start).utcOffset(false).isSame(moment(event.end).subtract(1, 'second').utcOffset(false), 'day');
+                },*/
             });
             calendar.render();
 
@@ -75,22 +88,21 @@ new Vue({
         handleDateClick: function(arg) {
             alert('date click! ' + arg.dateStr)
           },
-        guardarReservacion: function(){
-            /*this.reservacion.fecha = $("#fecha").val();
-            
-            axios.post('add_reservacion', {
+        guardarReservacion: function(){            
+            axios.post('/add_reservacion', {
                 nombre_persona: this.reservacion.nombre_persona,
                 fecha: this.reservacion.fecha,
-                id_paquete: this.reservacion.id_paquete,
+                id_paquete: this.reservacion.paquete,
                 correo: this.reservacion.correo
             }).then(response => {
                 if(response.data.ok){
-                    $("#btn_cerrar_modal_agregar").trigger("click");
-                    Swal.fire('Se agregó con éxito', '', 'success')  
-
+                    Swal.fire('Listo, se le envió un correo con instrucciones para completar su reservación.', '', 'success')  
                 }
                 console.log(response);
-            });*/
+            });
+        },
+        cambiarFecha: function(){
+            this.reservacion.fecha = $("#fecha").val();
         },
         moverReservacion: function(){
             axios.post('mover_reservacion', {

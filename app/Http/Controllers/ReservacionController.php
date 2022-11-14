@@ -81,12 +81,13 @@ class ReservacionController extends Controller
         ]);
     }
 
-    public function redireccion($fecha, $nombre, $correo, $paquete){
+    public function redireccion($fecha, $nombre, $correo, $paquete, $horario){
 		return \View::make('reservacion')
         ->with(compact('fecha'))
         ->with(compact('nombre'))
         ->with(compact('correo'))
-        ->with(compact('paquete'));
+        ->with(compact('paquete'))
+        ->with(compact('horario'));
 	}
 
 }

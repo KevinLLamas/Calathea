@@ -18,13 +18,14 @@
 
   <!-- Vendor CSS Files -->
   <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css' rel='stylesheet'>
+  <!--link href="{{asset('assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet"-->
   <link href="{{asset('assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/venobox/venobox.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.css">
+  <link href="{{asset('assets/vendor/fullcalendar/fullcalendar.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
@@ -37,8 +38,8 @@
         @yield('content') {{-- Cotenido de la pagina --}}
         @include('footer') {{-- Menu inferior --}}
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales-all.js"></script>
+    <script src="{{asset('assets/vendor/fullcalendar/main.min.js')}}"></script>
+    <script src="{{asset('assets/vendor/fullcalendar/locales-all.js')}}"></script>
     <script src="{{asset('assets/js/vue.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>

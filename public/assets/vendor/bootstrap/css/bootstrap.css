@@ -6903,7 +6903,11 @@ button.bg-dark:focus {
 }
 
 .rounded-lg {
-  border-radius: 0.3rem !important;
+  border-radius: 1.5rem !important;
+}
+
+.rounded-calendar {
+  border-radius: 1.5rem !important;
 }
 
 .rounded-circle {
