@@ -18,29 +18,28 @@
 
   <!-- Vendor CSS Files -->
   <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css' rel='stylesheet'>
-  <!--link href="{{asset('assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet"-->
+  <link href="{{asset('assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/venobox/venobox.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
   <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/vendor/fullcalendar/fullcalendar.css')}}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.css">
+  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.css" /-->
 
   <!-- Template Main CSS File -->
   <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </head>
 <body>
-  <script src="{{ asset('assets/js/axios.js')}}"></script>
+    <script src="{{ asset('assets/js/axios.js')}}"></script>
     <div id="wrapper">
-        @include('navbar') {{-- Menu superior --}}
+        @include('navbarpanel') {{-- Menu superior --}}
         @yield('content') {{-- Cotenido de la pagina --}}
-        @include('footer') {{-- Menu inferior --}}
     </div>
-    <script src="{{asset('assets/vendor/fullcalendar/main.min.js')}}"></script>
-    <script src="{{asset('assets/vendor/fullcalendar/locales-all.js')}}"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales-all.js"></script>
     <script src="{{asset('assets/js/vue.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
@@ -55,6 +54,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script-->
+    
     <!-- Template Main JS File -->
     <script src="{{asset('assets/js/main.js')}}"></script>
 

@@ -1,6 +1,6 @@
 @extends('app')
 @section('content')
-    
+
     <!-- End Hero -->
     <section id="about" class="about">
         <img src="{{asset('assets/img/calathea/BANNER.png')}}" class="img-fluid" alt="">
@@ -15,7 +15,6 @@
         
         </section>
         <!-- End Contact Section -->
-        
+        @include('mapa')
     </main>
-    <!-- End #main -->
 @endsection

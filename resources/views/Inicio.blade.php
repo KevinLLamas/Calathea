@@ -1,64 +1,48 @@
 @extends('app')
 @section('content')
-  <style>.google-map{
-    height:100%;
-    margin-bottom: -8px;
-}
-
-.google-map iframe{
-    width:100%;
-    border:0;
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
-    -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
-    -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
-} 
-#map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-       }</style>
-    <section id="about" class="about">
+<div id="inicio">
+    <div class="">
         <img src="{{asset('assets/img/calathea/banner_principal.png')}}" class="img-fluid" alt="">
         <div class="container" style="margin-top: -50px;">
-            <div class="card text-left shadow round">
+            <div class="card text-left shadow round" id="reservar">
               <img class="card-img-top" src="holder.js/100px180/" alt="">
               <div class="card-body row">
-                <div class="form-group col-3" >
+                <div class="form-group col-md-3 col-xs-12" >
                   <label for="">Fecha</label>
-                  <select class="form-control" name="" id="">
-                    <option>Sab, Mar 2022</option>
-                    <option></option>
-                    <option></option>
-                  </select>
+                  <input type="date" class="form-control" name="" id="" aria-describedby="helpId" v-model="fecha">
                 </div>
-                <div class="form-group col-3" >
+                <div class="form-group col-md-3 col-xs-12" >
                   <label for="">Paquete</label>
-                  <select class="form-control" name="" id="">
-                    <option>Paquete 1</option>
-                    <option></option>
-                    <option></option>
+                  <select class="form-control" name="" id="" v-model="paquete">
+                    <option value="">Elija un paquete</option>
+                    <option value="1">Paquete 1 Lunes y Martes</option>
+                    <option value="2">Paquete 2 Miercoles y Jueves</option>
+                    <option value="3">Paquete 3 Viernes</option>
+                    <option value="4">Paquete 4 Sabado</option>
+                    <option value="5">Paquete 5 Domingo</option>
                   </select>
                 </div>
-                <div class="form-group col-2" >
+                <div class="form-group col-md-2 col-xs-12" >
                   <label for="">Horario</label>
-                  <select class="form-control" name="" id="">
-                    <option>9:00</option>
-                    <option></option>
-                    <option></option>
+                  <select class="form-control" name="" id="" v-model="horario">
+                    <option value="">Seleccione</option>
+                    <option value="matutino">9:00 a 14:00 hrs</option>
+                    <option value="vespertino">14:00 a 19:00 hrs</option>
                   </select>
                 </div>
-                <div class="form-group col-2 mt-4">
+                <div class="form-group col-md-2 col-xs-12 mt-4">
                   <label for=""></label>
-                  <a name="" id="" class="btn btn-danger mt-1" href="#" role="button">VER PAQUETES</a>
+                  <a name="" id="" class="btn btn-danger mt-1" href="paquetes" role="button">VER PAQUETES</a>
                 </div>
-                <div class="form-group col-2 mt-4">
+                <div class="form-group col-md-2 col-xs-12 mt-4">
                   <label for=""></label>
-                  <a name="" id="" class="btn btn-danger mt-1" href="#" role="button">PRE RESERVAR</a>
+                  <button type="button" class="btn btn-danger mt-1" v-on:click="redir">PRE RESERVAR</button>
                 </div>
               </div>
             </div>
        </div> 
-    </section>
-    <section id="cliens" class="container-fluid">
+</div>
+    <section id="nosotros" class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
                     <img src="{{asset('assets/img/calathea/ninio.png')}}" class="img-fluid" alt="">
@@ -78,7 +62,7 @@
     <main id="main">
         <!-- ======= Cliens Section ======= -->
         
-        <section id="cliens" class="container-fluid text-center">
+        <section id="galeria" class="container-fluid text-center">
             <div class="row">
                 <div class="col-md-6">
                     <img src="{{asset('assets/img/calathea/galeria.png')}}" class="img-fluid" alt="">
@@ -103,18 +87,8 @@
             </div>
         </section>
          End Contact Section -->
-         <div id="map"></div>
+         @include('mapa')
     </main>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMOg75K24AhWgbuKKzFQ47q4kuWwufzGI&callback=initMap&signed_in=true" async defer></script>
-    <script>
-    function initMap() {
-      // The location of Uluru
-      var uluru = {lat: 19.512230, lng: -99.268843 };
-      // The map, centered at Uluru 
-      var map = new google.maps.Map(
-          document.getElementById('map'), {zoom: 18, center: uluru});
-      // The marker, positioned at Uluru
-      var marker = new google.maps.Marker({position: uluru, map: map});
-    }
-    </script>
+</div>
+    <script src="{{asset('/vue/inicio.js')}}"></script>
 @endsection

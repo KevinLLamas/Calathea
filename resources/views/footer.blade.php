@@ -1,7 +1,7 @@
 
 
 <!-- ======= Footer ======= -->
-<footer class="footer danger-bg" style="background:#93CFC5" id="">
+<footer class="footer danger-bg" style="background:#93CFC5" id="contacto">
   <div class="footer-top  ">
       <div class="container-fluid">
           <div class="row justify-content-around ml-3">
