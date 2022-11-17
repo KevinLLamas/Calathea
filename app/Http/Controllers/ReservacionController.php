@@ -1,12 +1,10 @@
 <?php
-
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
 use App\Models\Reservacion;
 use App\Models\Paquete;
-
 class ReservacionController extends Controller
 {
     public function get_reservaciones() {
@@ -94,11 +92,9 @@ class ReservacionController extends Controller
         ]);
     }
 
-    public function redireccion($fecha, $nombre, $correo, $paquete, $horario){
+    public function redireccion($fecha, $paquete, $horario){
 		return \View::make('reservacion')
         ->with(compact('fecha'))
-        ->with(compact('nombre'))
-        ->with(compact('correo'))
         ->with(compact('paquete'))
         ->with(compact('horario'));
 	}

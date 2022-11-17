@@ -13,19 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/inicio', function () {
     return view('Inicio');
 });
 Route::get('/panel', function () {
     return view('panel');
 });
+Route::get('/paquetes', function () {
+    return view('paquetes');
+});
 /*Route::get('/reservacion/{paquete}', function () {
     return view('reservacion');
 });*/
-Route::get('/reservacion/{fecha}/{nombre}/{correo}/{paquete}/{horario}', 'ReservacionController@redireccion');
-Route::get('inicio', function () {
-    return view('inicio2');
-});
+Route::get('/reservacion/{fecha}/{paquete}/{horario}', 'ReservacionController@redireccion');
+
 
 Route::post('send_email', 'ContactController@contactSubmit')->name('contact.submit');
 

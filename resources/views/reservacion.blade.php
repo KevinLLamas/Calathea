@@ -1,8 +1,7 @@
 @extends('app')
 @section('content')
 <div id="reservacion" v-cloak>  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
     <!-- End Hero -->
     <section id="about" class="about">
         <img src="{{asset('assets/img/calathea/BANNER.png')}}" class="img-fluid" alt="">
@@ -17,28 +16,26 @@
                 <div class="col-md-6">
                     <img src="{{asset('assets/img/calathea/Grupo 2087.png')}}" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-6">
-                    <img src="{{asset('assets/img/calathea/Trazado 27181.png')}}" class="img-fluid" alt="">
+                <div class="col-md-6 float-right">
+                    <img src="{{asset('assets/img/calathea/Trazado 27181.png')}}" class="w-25" alt="">
                 </div>
             </div>
             
         </section>
         <input type="hidden" value="{{$fecha}}" name="fecha" id="fecha">
-        <input type="hidden" value="{{$nombre}}" name="nombre" id="nombre">
-        <input type="hidden" value="{{$correo}}" name="correo" id="correo">
         <input type="hidden" value="{{$paquete}}" name="paquete" id="paquete">
         <input type="hidden" value="{{$horario}}" name="horario" id="horario">
         <section id="cliens" class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="container border border-secondary rounded-lg">
+                    <div class="container border border-secondary rounded-lg shadow">
                         <button type="button" id="btn_cambio_fecha" class="btn btn-primary" data-toggle="modal" v-on:click="cambiarFecha()" hidden></button>
                         <div id="calendar"></div>  
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="row border border-secondary rounded-lg">
-                        <div class="form-group col-12">
+                    <div class="row border border-secondary rounded-lg shadow">
+                        <div class="form-group col-12 mt-3">
                             <label for="titulo">Fecha: </label>
                             <input type="text" class="form-control rounded mb-4" name="fecha" id="fecha" aria-describedby="helpId" placeholder="Fecha de la reservacion" v-model="reservacion.fecha" readonly>
                             <label for="titulo">Nombre Cliente: </label>
@@ -60,7 +57,7 @@
                                 <option value="matutino">9:00 a 14:00 hrs</option>
                                 <option value="vespertino">14:00 a 19:00 hrs</option>
                             </select>
-                            <button type="button" class="mt-3 btn btn-warning btn-block" v-on:click="guardarReservacion()">RESERVAR</button>
+                            <button type="button" class="mt-3 btn btn-danger btn-block" v-on:click="guardarReservacion()">RESERVAR</button>
                         </div>
                     </div>
                 </div>
