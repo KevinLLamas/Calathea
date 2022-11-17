@@ -39,7 +39,7 @@ new Vue({
                     right: 'dayGridMonth, timeGridWeek, listWeek'
                 },
                 contentHeight:"auto",
-                events: '/get_reservaciones',
+                events: '/get_reservaciones_cliente',
                 selectable:true,
                 selectHelper: true,
                 fixedWeekCount: false,
@@ -70,10 +70,13 @@ new Vue({
                     $("#btn_llamar_llenar").trigger("click");
                     $("#btn_abrir_modal_editar").trigger("click");*/
                 },
-                /*selectAllow: function(event)
+                selectAllow: function(event)
                 {
-                    return moment(event.start).utcOffset(false).isSame(moment(event.end).subtract(1, 'second').utcOffset(false), 'day');
-                },*/
+                    console.log(event);
+                    //return true;
+                    var m = moment(event.start).utcOffset(false).isSame(moment(event.end).subtract(1, 'second').utcOffset(false), 'day');
+                    return m;
+                },
             });
             calendar.render();
 

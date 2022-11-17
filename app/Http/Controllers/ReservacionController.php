@@ -18,6 +18,19 @@ class ReservacionController extends Controller
         return $reservaciones;
     }
 
+    public function get_reservaciones_cliente() {
+        $reservaciones = DB::table('reservacion')
+        ->join('paquete', 'reservacion.id_paquete', '=', 'paquete.id')
+        ->select('reservacion.id', 'reservacion.nombre_persona as title', 'reservacion.fecha as date', 'paquete.color as color', 'paquete.horario')
+        ->get();
+
+        foreach($reservaciones as $r){
+            $r->title = "Res ".$r->horario;
+        }
+
+        return $reservaciones;
+    }
+
     public function get_paquetes() {
         $paquetes = Paquete::All();
         return response()->json([

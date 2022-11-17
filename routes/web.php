@@ -38,6 +38,7 @@ Route::post('/login', 'UserController@login');
 
 Route::get('/get_paquetes', 'ReservacionController@get_paquetes');
 Route::get('/get_reservaciones', 'ReservacionController@get_reservaciones');
+Route::get('/get_reservaciones_cliente', 'ReservacionController@get_reservaciones_cliente');
 Route::post('/add_reservacion', 'ReservacionController@add_reservacion');
 Route::post('/mover_reservacion', 'ReservacionController@mover_reservacion');
 Route::post('/get_reservacion', 'ReservacionController@get_reservacion');
