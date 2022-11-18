@@ -7,7 +7,9 @@
         <section id="cliens" class="container">
             <label id="label_id" hidden></label>
             <button type="button" id="btn_llamar_llenar" class="btn btn-primary" v-on:click="llenarReservacion()" hidden>Mover</button>
+            <button type="button" id="btn_llamar_disponible" class="btn btn-primary" v-on:click="checkDisponible()" hidden>Mover</button>
             <button type="button" id="btn_llamar_limpiar" class="btn btn-primary" v-on:click="limpiar()" hidden></button>
+            <button type="button" id="btn_llamar_paqueteDia" class="btn btn-primary" v-on:click="getPaquetesDia()" hidden></button>
             
             <div class="container">
                 <button type="button" id="btn_abrir_modal_mover" class="btn btn-primary" data-toggle="modal" data-target="#moverReservacion">Cambiar</button>
@@ -36,8 +38,9 @@
                                         <label for="titulo">Paquete: </label>
                                         <select class="form-control" name="" id="paquete_edit" v-model="reservacion.id_paquete">
                                             <option value="" disabled selected="selected">Elija un paquete</option>
-                                            <option v-for="paquete in paquetes" v-bind:value="paquete.id">@{{paquete.descripcion}}</option>
+                                            <option v-for="paquete in paquetes" v-bind:value="paquete.id">Paquete N°@{{paquete.numero_paquete}}; Horario @{{paquete.horas}} Costo: @{{paquete.costo}}</option>
                                         </select>
+                                        
                                     </div>
                                 </div>
                             <div class="modal-footer">
@@ -69,13 +72,13 @@
                                         <label for="titulo">Paquete: </label>
                                         <select class="form-control" name="" id="paquete_edit" v-model="reservacion.id_paquete">
                                             <option value="" disabled selected="selected">Elija un paquete</option>
-                                            <option v-for="paquete in paquetes" v-bind:value="paquete.id">@{{paquete.descripcion}}</option>
+                                            <option v-for="paquete in paquetes" v-bind:value="paquete.id">Paquete N°@{{paquete.numero_paquete}}; Horario @{{paquete.horas}} Costo: @{{paquete.costo}}</option>
                                         </select>
                                     </div>
                                 </div>
                             <div class="modal-footer">
                                 <button id="btn_cerrar_modal_mover" type="button" class="btn btn-secondary" v-on:click="limpiar()" data-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-primary" v-on:click="moverReservacion()">Guardar Cambios</button>
+                                <button type="button" class="btn btn-primary" v-on:click="editarReservacion()">Guardar Cambios</button>
                             </div>
                         </div>
                     </div>
@@ -103,7 +106,7 @@
                                         <label for="titulo">Paquete: </label>
                                         <select class="form-control" name="" id="paquete_edit" v-model="reservacion.id_paquete">
                                             <option value="" disabled selected="selected">Elija un paquete</option>
-                                            <option v-for="paquete in paquetes" v-bind:value="paquete.id">@{{paquete.descripcion}}</option>
+                                            <option v-for="paquete in paquetes" v-bind:value="paquete.id">Paquete N°@{{paquete.numero_paquete}}; Horario @{{paquete.horas}} Costo: @{{paquete.costo}}</option>
                                         </select>
                                     </div>
                                 </div>

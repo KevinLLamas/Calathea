@@ -22,7 +22,7 @@ new Vue({
                 swal.fire('Atención', "Ingrese un horario valido", 'warning');
                 return;
             }
-            window.location.href = "reservacion/"+this.fecha+"/"+this.paquete+"/+"+this.horario;
+            window.location.href = "reservacion/"+this.fecha+"/"+this.paquete+"/"+this.horario;
         }
     }
 });
