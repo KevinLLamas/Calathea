@@ -25,7 +25,7 @@ Route::get('/paquetes', function () {
 /*Route::get('/reservacion/{paquete}', function () {
     return view('reservacion');
 });*/
-Route::get('/reservacion/{fecha}/{paquete}/{horario}', 'ReservacionController@redireccion');
+Route::get('/reservacion/{fecha}/{paquete}', 'ReservacionController@redireccion');
 
 
 Route::post('send_email', 'ContactController@contactSubmit')->name('contact.submit');

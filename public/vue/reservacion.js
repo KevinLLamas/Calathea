@@ -17,18 +17,24 @@ new Vue({
             es_donfirmada: '',
             horario: ''
         },
-        paquetes:[]
+        paquetes:[],
+        calendarEl: '',
+        calendar: ''
     },
     created: function(){
         this.reservacion.fecha = $("#fecha").val();
         this.reservacion.nombre_persona = $("#nombre").val();
         this.reservacion.correo = $("#correo").val();
-        this.reservacion.paquete = $("#paquete").val();
-        this.reservacion.horario = $("#horario").val();
-        document.addEventListener('DOMContentLoaded', function() {
-            
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
+        this.reservacion.id_paquete = $("#paquete").val();
+        document.addEventListener('DOMContentLoaded', this.setup);
+        this.check_disponible();
+        //this.paquete = this.no_paquete;
+        //this.getPaquetes();
+    },
+    methods:{
+        setup: function(){
+            this.calendarEl = document.getElementById('calendar');
+            this.calendar = new FullCalendar.Calendar(this.calendarEl, {
                 initialView: 'dayGridMonth',
                 themeSystem: 'bootstrap5',
                 locale:"es",
@@ -78,19 +84,32 @@ new Vue({
                     return m;
                 },
             });
-            calendar.render();
+            this.calendar.render();
 
             /*var event = calendar.getEvents();
             console.log(event);*/
-            
-        });
-        //this.paquete = this.no_paquete;
-        //this.getPaquetes();
-    },
-    methods:{
+        },
         handleDateClick: function(arg) {
             alert('date click! ' + arg.dateStr)
           },
+          check_disponible: function(){
+            axios.post('/get_paquete_dia',{
+                fecha: this.reservacion.fecha,
+                tipo: 'Nuevo'
+             }).then(response=>{           
+                if(response.data.ok){
+                    this.paquetes = response.data.data;                    
+                    //this.llenarReservacionMover();
+                    //$("#btn_abrir_modal_mover").trigger("click");
+                }else{
+                    swal.fire('Atención', response.data.data, 'warning');
+                    //this.setup();
+                    return;
+                }
+             }).catch(error=>{
+                console.log(error);
+             });
+        },
         guardarReservacion: function(){            
             axios.post('/add_reservacion', {
                 nombre_persona: this.reservacion.nombre_persona,

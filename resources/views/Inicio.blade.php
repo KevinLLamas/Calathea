@@ -9,27 +9,23 @@
               <div class="card-body row">
                 <div class="form-group col-md-3 col-xs-12" >
                   <label for="">Fecha</label>
-                  <input type="date" class="form-control" name="" id="" aria-describedby="helpId" v-model="fecha">
+                  <input type="date" class="form-control" name="" id="" aria-describedby="helpId" v-model="fecha" @change="get_info()">
                 </div>
-                <div class="form-group col-md-3 col-xs-12" >
-                  <label for="">Paquete</label>
+                <div class="form-group col-md-5 col-xs-12" >
+                  <label for="">Paquete y Horario</label>
                   <select class="form-control" name="" id="" v-model="paquete">
-                    <option value="">Elija un paquete</option>
-                    <option value="1">Paquete 1 Lunes y Martes</option>
-                    <option value="2">Paquete 2 Miercoles y Jueves</option>
-                    <option value="3">Paquete 3 Viernes</option>
-                    <option value="4">Paquete 4 Sabado</option>
-                    <option value="5">Paquete 5 Domingo</option>
+                  <option value="" disabled selected="selected">Elija un paquete y horario</option>
+                      <option v-for="paquete in paquetes" v-bind:value="paquete.id">Paquete N°@{{paquete.numero_paquete}}; Horario @{{paquete.horas}}</option>
                   </select>
                 </div>
-                <div class="form-group col-md-2 col-xs-12" >
+                <!--div class="form-group col-md-2 col-xs-12" >
                   <label for="">Horario</label>
                   <select class="form-control" name="" id="" v-model="horario">
                     <option value="">Seleccione</option>
                     <option value="matutino">9:00 a 14:00 hrs</option>
                     <option value="vespertino">14:00 a 19:00 hrs</option>
                   </select>
-                </div>
+                </div!-->
                 <div class="form-group col-md-2 col-xs-12 mt-4">
                   <label for=""></label>
                   <a name="" id="" class="btn btn-danger mt-1" href="paquetes" role="button">VER PAQUETES</a>

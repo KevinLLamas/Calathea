@@ -24,7 +24,6 @@
         </section>
         <input type="hidden" value="{{$fecha}}" name="fecha" id="fecha">
         <input type="hidden" value="{{$paquete}}" name="paquete" id="paquete">
-        <input type="hidden" value="{{$horario}}" name="horario" id="horario">
         <section id="cliens" class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -43,19 +42,9 @@
                             <label for="titulo">Correo Cliente: </label>
                             <input type="text" class="form-control rounded mb-4" name="correo" id="correo" aria-describedby="helpId" placeholder="Correo persona que reserva" v-model="reservacion.correo">
                             <label for="titulo">Paquete: </label>
-                            <select v-if="reservacion.paquete != ''"class="form-control rounded mb-4" name="" id="" v-model="reservacion.paquete">
-                                <option disabled>Elija un paquete</option>
-                                <option value="1">Paquete 1 Lunes y Martes</option>
-                                <option value="2">Paquete 2 Miercoles y Jueves</option>
-                                <option value="3">Paquete 3 Viernes</option>
-                                <option value="4">Paquete 4 Sabado</option>
-                                <option value="5">Paquete 5 Domingo</option>
-                            </select>
-                            <label for="titulo">Horario: </label>
-                            <select v-if="reservacion.horario != ''"class="form-control rounded mb-4" name="" id="" v-model="reservacion.horario">
-                                <option disabled>Horario</option>
-                                <option value="matutino">9:00 a 14:00 hrs</option>
-                                <option value="vespertino">14:00 a 19:00 hrs</option>
+                            <select class="form-control" name="" id="paquete_edit" v-model="reservacion.id_paquete">
+                                <option value="" disabled selected="selected">Elija un paquete</option>
+                                <option v-for="paquete in paquetes" v-bind:value="paquete.id">Paquete N°@{{paquete.numero_paquete}}; Horario @{{paquete.horas}} Costo: @{{paquete.costo}}</option>
                             </select>
                             <button type="button" class="mt-3 btn btn-danger btn-block" v-on:click="guardarReservacion()">RESERVAR</button>
                         </div>

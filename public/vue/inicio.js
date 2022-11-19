@@ -3,7 +3,9 @@ new Vue({
     data: {
         fecha: '',
         paquete: '',
-        horario: ''
+        horario: '',
+        paquetes: [],
+        mostrar_paquetes: true,
     },
     created: function(){
         
@@ -18,11 +20,36 @@ new Vue({
                 swal.fire('Atención', "Ingrese un paquete valido", 'warning');
                 return;
             }
-            if(this.horario == ''){
-                swal.fire('Atención', "Ingrese un horario valido", 'warning');
-                return;
-            }
-            window.location.href = "reservacion/"+this.fecha+"/"+this.paquete+"/"+this.horario;
+            window.location.href = "reservacion/"+this.fecha+"/"+this.paquete;
+        },
+
+        getPaquetes: function(){
+            axios.get('get_paquetes').then(response => {
+                if(response.data.ok){
+                    this.paquetes = response.data.data;
+                }
+                console.log(response);
+            });
+        },
+
+        get_info: function(){
+            axios.post('get_paquete_dia',{
+                fecha: this.fecha,
+                tipo: 'Edicion'
+             }).then(response=>{           
+                if(response.data.ok){
+                    this.paquetes = response.data.data;                    
+                    //this.llenarReservacionMover();
+                    //$("#btn_abrir_modal_mover").trigger("click");
+                }else{
+                    swal.fire('Atención', response.data.data, 'warning');
+                    //this.setup();
+                    return;
+                }
+             }).catch(error=>{
+                console.log(error);
+             });
         }
+        
     }
 });

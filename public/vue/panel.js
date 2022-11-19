@@ -128,7 +128,6 @@ new Vue({
             });
         },
         confirmarReservacion: function(dato){
-            
             Swal.fire({
                 title: '¿Esta seguro que desea cambiar el status de está reservación?',
                 showDenyButton: true,
