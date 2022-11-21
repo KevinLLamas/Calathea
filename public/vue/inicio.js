@@ -33,9 +33,8 @@ new Vue({
         },
 
         get_info: function(){
-            axios.post('get_paquete_dia',{
+            axios.post('get_all_paquetes_dia',{
                 fecha: this.fecha,
-                tipo: 'Edicion'
              }).then(response=>{           
                 if(response.data.ok){
                     this.paquetes = response.data.data;                    

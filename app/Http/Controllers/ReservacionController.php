@@ -45,6 +45,45 @@ class ReservacionController extends Controller
         ]);    
     }
 
+    public function get_all_paquetes_dia(Request $request){
+        $fecha = $request->input("fecha");
+
+        $date = date('l', strtotime($fecha));
+        switch ($date) {
+            case 'Monday':
+                $dia = 'Lunes';
+                break;
+            case 'Tuesday':
+                $dia = 'Martes';
+                break;
+            case 'Wednesday':
+                $dia = 'Miercoles';
+                break;
+            case 'Thursday':
+                $dia = 'Jueves';
+                break;
+            case 'Friday':
+                $dia = 'Viernes';
+                break;
+            case 'Saturday':
+                $dia = 'Sabado';
+                break;
+            case 'Sunday':
+                $dia = 'Domingo';
+                break;
+            default:
+                # code...
+                break;
+        }
+        $paquetes = Paquete::where('descripcion', 'like', '%'.$dia.'%')->get();
+        
+        return response()->json([
+            'ok' => true,
+            'data' => $paquetes
+        ]);
+      
+    }
+
     public function get_paquete_dia(Request $request) {
         $fecha = $request->input("fecha");
         $tipo = $request->input("tipo");
