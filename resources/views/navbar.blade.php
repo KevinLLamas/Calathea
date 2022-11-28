@@ -23,15 +23,15 @@
 </header-->
 <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
     
-    <a class="navbar-brand" href="#"><img src="{{asset('assets/img/calathea/logo_header.png')}}" alt="logo" class="w-50"></a>
+    <a class="navbar-brand" href="#"><img src="{{asset('assets/img/calathea/logo_header.png')}}" alt="logo" class="w-30"></a>
     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
         aria-expanded="false" aria-label="Toggle navigation"></button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 float-right">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#">Link</a>
             </li>
         </ul>

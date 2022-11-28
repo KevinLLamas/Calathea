@@ -10,10 +10,10 @@
     </section>
     <main id="main">
         <!-- ======= Cliens Section ======= -->
-        <section id="cliens" class="container">
+        <section id="cliens" class="container mb-5">
             <img src="{{asset('assets/img/calathea/TABLA_PLANES.png')}}" class="img-fluid" alt="">
         
-        </section>
+        </section><br><br>
         <!-- End Contact Section -->
         @include('mapa')
     </main>

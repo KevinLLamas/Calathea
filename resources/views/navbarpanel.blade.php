@@ -8,8 +8,9 @@
 
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-          <li class="">ADMINISTRADOR</li>
-          <li><h1 style="background-color:white;"><img src="{{asset('assets/img/calathea/Trazado 27181.png')}}" alt="logo" width="25" height="25"></h1></li>
+          <li class="text-white mt-3 ml-5"><h3>ADMINISTRADOR</h3></li>
+          <li class="text-white mt-3 ml-5"></li>
+          <div class="rounded-circle bg-white " style ="padding:23px 20px 26px 19px;"><img src="{{asset('assets/img/calathea/Trazado 27181.png')}}" class="" alt="logo" width="50" height="40" ></div>
       </ul>
     </nav><!-- .nav-menu 
 

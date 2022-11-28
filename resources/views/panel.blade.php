@@ -1,6 +1,6 @@
 @extends('apppanel')
 @section('content')
-<div id="panel" v-cloak>
+<div id="panel" v-cloak style="background: #FFF8F3;">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <main id="main">
@@ -15,7 +15,14 @@
                 <button type="button" id="btn_abrir_modal_mover" class="btn btn-primary" data-toggle="modal" data-target="#moverReservacion">Cambiar</button>
                 <button type="button" id="btn_abrir_modal_editar" class="btn btn-primary" data-toggle="modal" data-target="#editarReservacion">Cambiar</button>
                 <button type="button" id="btn_abrir_modal" class="btn btn-primary" data-toggle="modal" data-target="#agregarReservacion">Cambiar</button>
-                <div id="calendar"></div>  
+                <br><br><br><br>
+                <div class="card text-left border rounded-lg shadow " style="border-radius: 1.5rem!important;">
+                  <img class="card-img-top" src="holder.js/100px180/" alt="">
+                  <div class="card-body">
+                    <div id="calendar"></div> 
+                  </div>
+                </div>
+                 
             </div>
             <div class="modal fade" id="agregarReservacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
                     <div class="modal-dialog">
