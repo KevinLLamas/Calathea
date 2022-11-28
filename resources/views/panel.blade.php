@@ -118,11 +118,12 @@
                                     </div>
                                 </div>
                             <div class="modal-footer">
-                                <button id="btn_cerrar_modal_edit" type="button" class="btn btn-secondary" v-on:click="limpiar()" data-dismiss="modal">Cerrar</button>
-                                <button v-if="reservacion.es_confirmada == 'No'" type="button" class="btn btn-success" v-on:click="confirmarReservacion('Si')">Confirmar</button>
-                                <button v-if="reservacion.es_confirmada == 'Si'" type="button" class="btn btn-warning" v-on:click="confirmarReservacion('No')">Desconfirmar</button>
-                                <button type="button" class="btn btn-danger" v-on:click="eliminarReservacion()">Eliminar</button>
-                                <button type="button" class="btn btn-primary" v-on:click="editarReservacion()">Guardar</button>
+                                <!--button id="btn_cerrar_modal_edit" type="button" class="btn btn-secondary" v-on:click="limpiar()" data-dismiss="modal">Cerrar</button-->
+                                <button v-if="reservacion.es_confirmada == 'No'" type="button" class="btn btn-primary" v-on:click="confirmarReservacion('Si')" >Confirmar</button>
+                                <button v-if="reservacion.es_confirmada == 'Si'" type="button" class="btn btn-primary" v-on:click="confirmarReservacion('No')" >Desconfirmar</button>
+                                
+                                <button type="button" class="btn btn-primary" v-on:click="editarReservacion()">Guardar edición</button>
+                                <button type="button" class="btn btn-danger" v-on:click="eliminarReservacion()" style="background:#E9590B;">Eliminar</button>
                             </div>
                         </div>
                     </div>
