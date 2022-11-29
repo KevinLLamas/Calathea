@@ -28,12 +28,12 @@
         aria-expanded="false" aria-label="Toggle navigation"></button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
+        <li class=""><a href="/inicio">INICIO</a></li>
+        <li><a href="/inicio#nosotros">NOSOTROS</a></li>
+        <li><a href="/paquetes">PAQUETES</a></li>
+        <li><a href="/inicio#galeria">GALERÍA</a></li>
+        <li><a href="/inicio#reservar">RESERVAR</a></li>
+        <li><a href="/inicio#contacto">CONTACTO</a></li>
         </ul>
     </div>
 </nav>
