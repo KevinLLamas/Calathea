@@ -22,13 +22,16 @@ Route::get('/panel', function () {
 Route::get('/paquetes', function () {
     return view('paquetes');
 });
+Route::get('/fontaw', function () {
+    return view('fontaw');
+});
 /*Route::get('/reservacion/{paquete}', function () {
     return view('reservacion');
 });*/
 Route::get('/reservacion/{fecha}/{paquete}', 'ReservacionController@redireccion');
 
 
-Route::post('send_email', 'ContactController@contactSubmit')->name('contact.submit');
+Route::post('send_email', 'ContactController@contactSubmit');
 
 Route::post('/login', 'UserController@login');
 Route::get('/getSession', 'UserController@getSession');

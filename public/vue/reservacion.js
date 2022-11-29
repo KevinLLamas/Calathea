@@ -173,9 +173,21 @@ new Vue({
                 correo: this.reservacion.correo
             }).then(response => {
                 if(response.data.ok){
-                    Swal.fire('Listo, se le envió un correo con instrucciones para completar su reservación.', '', 'success')  
-                    this.setup();
-                    this.limpiar();
+
+                    axios.post('/send_email', {
+                        name: this.reservacion.nombre_persona,
+                        email: this.reservacion.correo,
+                        subject: 'Termina de Reservar',
+                        msg: 'Tu prere'
+                    }).then(response => {
+                        if(response.data.ok){
+                            
+                            Swal.fire('Listo, se le envió un correo con instrucciones para completar su reservación.', '', 'success')  
+                            this.setup();
+                            this.limpiar();
+                        }
+                        console.log(response);
+                    });
                 }
                 console.log(response);
             });

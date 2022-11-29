@@ -3,6 +3,7 @@
 <div id="panel" v-cloak style="background: #FFF8F3;">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <main id="main">
     <div id="wrapper">
 
@@ -11,6 +12,7 @@
     <ul class="sidebar-nav">
         <li>
             <a href="http://127.0.0.1:8000/panel">AGENDA</a>
+            <i class="fas fa-cloud">iui</i>
         </li>
         <li>
             <a href="http://127.0.0.1:8000/inicio">NOTIFICACIONES</a>
