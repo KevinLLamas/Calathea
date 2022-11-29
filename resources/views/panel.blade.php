@@ -1,6 +1,6 @@
 @extends('apppanel')
 @section('content')
-<div id="panel" v-cloak>
+<div id="panel" v-cloak style="background: #FFF8F3;">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <main id="main">
@@ -15,14 +15,14 @@
                 <button type="button" id="btn_abrir_modal_mover" class="btn btn-primary" data-toggle="modal" data-target="#moverReservacion">Cambiar</button>
                 <button type="button" id="btn_abrir_modal_editar" class="btn btn-primary" data-toggle="modal" data-target="#editarReservacion">Cambiar</button>
                 <button type="button" id="btn_abrir_modal" class="btn btn-primary" data-toggle="modal" data-target="#agregarReservacion">Cambiar</button>
-                <div class="card text-left">
+                <br><br><br><br>
+                <div class="card text-left border rounded-lg shadow " style="border-radius: 1.5rem!important;">
                   <img class="card-img-top" src="holder.js/100px180/" alt="">
                   <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <div id="calendar"></div>
+                    <div id="calendar"></div> 
                   </div>
                 </div>
-                
+                 
             </div>
             <div class="modal fade" id="agregarReservacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
                     <div class="modal-dialog">
@@ -118,11 +118,12 @@
                                     </div>
                                 </div>
                             <div class="modal-footer">
-                                <button id="btn_cerrar_modal_edit" type="button" class="btn btn-secondary" v-on:click="limpiar()" data-dismiss="modal">Cerrar</button>
-                                <button v-if="reservacion.es_confirmada == 'No'" type="button" class="btn btn-success" v-on:click="confirmarReservacion('Si')">Confirmar</button>
-                                <button v-if="reservacion.es_confirmada == 'Si'" type="button" class="btn btn-warning" v-on:click="confirmarReservacion('No')">Desconfirmar</button>
-                                <button type="button" class="btn btn-danger" v-on:click="eliminarReservacion()">Eliminar</button>
-                                <button type="button" class="btn btn-primary" v-on:click="editarReservacion()">Guardar</button>
+                                <!--button id="btn_cerrar_modal_edit" type="button" class="btn btn-secondary" v-on:click="limpiar()" data-dismiss="modal">Cerrar</button-->
+                                <button v-if="reservacion.es_confirmada == 'No'" type="button" class="btn btn-primary" v-on:click="confirmarReservacion('Si')" >Confirmar</button>
+                                <button v-if="reservacion.es_confirmada == 'Si'" type="button" class="btn btn-primary" v-on:click="confirmarReservacion('No')" >Desconfirmar</button>
+                                
+                                <button type="button" class="btn btn-primary" v-on:click="editarReservacion()">Guardar edición</button>
+                                <button type="button" class="btn btn-danger" v-on:click="eliminarReservacion()" style="background:#E9590B;">Eliminar</button>
                             </div>
                         </div>
                     </div>

@@ -8,9 +8,9 @@ class UserController extends Controller
 {
     public function login(Request $request) {
         $correo = $request->input('correo');
-        $contraseña = hash('SHA256', $request->input("contrasenia"));
-        $usuario = Usuario::with('departamento')->where('correo', $correo)->first();
-        if(empty($contraseña))
+        $contrasena = hash('SHA256', $request->input("contrasenia"));
+        $usuario = Usuario::where('correo', $correo)->first();
+        if(empty($contrasena))
         {
             return response()->json([
                 'ok'=> false, 
@@ -18,17 +18,12 @@ class UserController extends Controller
             ]);
         }
         if($usuario != null){
-            if($usuario->contrasenia == $contraseña){
+            if($usuario->password == $contrasena){
                 Session::flush();
                 Session::put([
                     'id'=>$usuario->id,
                     'nombre'=> $usuario->nombre,
-                    'apellido'=> $usuario->apellido,
                     'correo'=> $usuario->correo,
-                    'rol'=>$usuario->rol,
-                    'departamento'=>$usuario->departamento,
-                    'path_foto'=>$usuario->path_foto,
-                    'nombre_foto'=>$usuario->nombre_foto,
                 ]);
                 Session::save();
                 

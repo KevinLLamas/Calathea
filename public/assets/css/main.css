@@ -190,7 +190,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
     box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25);
   }
 .fc .fc-button:disabled {
-    opacity: 0.65;
+    opacity: 1;
   }
 .fc {
 
@@ -200,10 +200,10 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
 .fc .fc-button-primary {
     color: #fff;
     color: var(--fc-button-text-color, #fff);
-    background-color: #2C3E50;
-    background-color: var(--fc-button-bg-color, #2C3E50);
-    border-color: #2C3E50;
-    border-color: var(--fc-button-border-color, #2C3E50);
+    background-color: #93CFC5;
+    background-color: var(--fc-button-bg-color, #93CFC5);
+    border-color: #93CFC5;
+    border-color: var(--fc-button-border-color, #93CFC5);
   }
 .fc .fc-button-primary:hover {
     color: #fff;
@@ -216,10 +216,10 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
 .fc .fc-button-primary:disabled { /* not DRY */
     color: #fff;
     color: var(--fc-button-text-color, #fff);
-    background-color: #2C3E50;
-    background-color: var(--fc-button-bg-color, #2C3E50);
-    border-color: #2C3E50;
-    border-color: var(--fc-button-border-color, #2C3E50); /* overrides :hover */
+    background-color: #93CFC5;
+    background-color: var(--fc-button-bg-color, #93CFC5);
+    border-color: #93CFC5;
+    border-color: var(--fc-button-border-color, #93CFC5); /* overrides :hover */
   }
 .fc .fc-button-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
@@ -296,7 +296,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
     font-size: 1.75em;
     margin: 0;
     text-transform: capitalize;
-    color: #93CFC5; 
+    color: #93CFC5;
   }
 .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
     margin-left: .75em; /* space between */
@@ -458,8 +458,8 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
       font-style: italic;
     }
 .fc .fc-highlight {
-    background: #a9e7dd;
-    background: var(--fc-highlight-color, #a9e7dd);
+    background: rgba(188, 232, 241, 0.3);
+    background: var(--fc-highlight-color, rgba(188, 232, 241, 0.3));
   }
 .fc .fc-cell-shaded,
   .fc .fc-day-disabled {
@@ -713,8 +713,8 @@ A HORIZONTAL event
     z-index: 1; /* container inner z-index's because <tr>s can't do it */
   }
 .fc .fc-daygrid-day.fc-day-today {
-      background-color: #d5fff8;
-      background-color: var(--fc-today-bg-color, #e5f7f4);
+      background-color: rgba(160, 160, 160, 0.15);
+      background-color: var(--fc-today-bg-color, rgba(151, 151, 151, 0.15));
     }
 .fc .fc-daygrid-day-frame {
     position: relative;
@@ -1378,9 +1378,6 @@ A VERTICAL event
 
   /* the table's border-style:hidden gets confused by hidden thead. force-hide top border of first cell */
 
-}
-.fc td, .fc th {
-  border-style: none !important;
 }
 .fc .fc-list-table tbody > tr:first-child th {
     border-top: 0;

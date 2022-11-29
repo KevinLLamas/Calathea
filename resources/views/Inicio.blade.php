@@ -3,7 +3,7 @@
 <div id="inicio">
     <div class="">
         <img src="{{asset('assets/img/calathea/banner_principal.png')}}" class="img-fluid" alt="">
-        <div class="container" style="margin-top: -50px;">
+        <div class="container " style="margin-top: -50px;" >
             <div class="card text-left shadow round" id="reservar">
               <img class="card-img-top" src="holder.js/100px180/" alt="">
               <div class="card-body row">
@@ -13,8 +13,8 @@
                 </div>
                 <div class="form-group col-md-5 col-xs-12" >
                   <label for="">Paquete y Horario</label>
-                  <select class="form-control" name="" id="" v-model="paquete">
-                  <option value="" disabled selected="selected">Elija un paquete y horario</option>
+                  <select class="form-control" name="" id="" v-model="paquete" required>
+                    <option value="">Elija un paquete y horario</option>
                       <option v-for="paquete in paquetes" v-bind:value="paquete.id">Paquete N°@{{paquete.numero_paquete}}; Horario @{{paquete.horas}}</option>
                   </select>
                 </div>

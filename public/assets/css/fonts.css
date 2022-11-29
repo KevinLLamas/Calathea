@@ -1,0 +1,12 @@
+@font-face{font-family:"gotham-rounded-medium";
+    src:url("/assets/fonts/GothamRounded-Medium.otf") 
+    format("woff"),url("/assets/fonts/GothamRounded-Medium.otf")
+    format("opentype"),url("/assets/fonts//GothamRounded-Medium.otf")
+    format("truetype");
+}
+html,body,h1,h2,h3,h4,h5,div,p {
+    font-family: "gotham-rounded-medium";
+}
+.swal2-popup {
+    font-family: "gotham-rounded-medium";
+  }
