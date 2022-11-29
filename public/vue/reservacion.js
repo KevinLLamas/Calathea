@@ -180,9 +180,24 @@ new Vue({
                         subject: 'Termina de Reservar',
                         msg: 'Tu prere'
                     }).then(response => {
-                        if(response.data.ok){
-                            
-                            Swal.fire('Listo, se le envió un correo con instrucciones para completar su reservación.', '', 'success')  
+                        if(response.data.ok){                            
+                            //Swal.fire('Listo, se le envió un correo con instrucciones para completar su reservación.', '', 'success')
+                            Swal.fire({
+                                title: '',
+                                icon: '',                                
+                                html:
+                                '<img src="/assets/img/calathea/Trazado 31519.png" alt="logo" class="w-25" style="font-family:'+"'gotham-rounded-medium'"+';width: 15%!important;"><br><br>'+
+                                '<h4 style="color:white"><b>Tu Pre Reservación ha sido hecha</b></h4>'+
+                                '<h4 style="color:white">Recibirás un mail de confirmación <br>A tu correo de contacto<h4>',
+                                color: "#fff",
+                                background: '#84C5B8',
+                                showCloseButton: true,
+                                showCancelButton: false,
+                                focusConfirm: false,
+                                confirmButtonColor: "#E9590B",
+                                confirmButtonText:
+                                '<i class="fa fa-thumbs-up"></i>Regresar',
+                            });  
                             this.setup();
                             this.limpiar();
                         }

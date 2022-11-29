@@ -14,7 +14,7 @@ new Vue({
                 contrasenia: this.contrasenia,
             }).then(result=>{           
                 if(result.data.ok){
-                    window.location = '/dashboard';
+                    window.location = '/panel';
                 }else{
                     swal.fire('Error', result.data.message, 'warning');
                 }

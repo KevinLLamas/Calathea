@@ -4,8 +4,8 @@
 <footer class="footer danger-bg" style="background:#93CFC5" id="contacto">
   <div class="footer-top  ">
       <div class="container-fluid">
-          <div class="row justify-content-around ml-3">
-              <div class="col-lg-8 mb-3 mb-lg-0 ">
+          <div class="row ml-3">
+              <div class="col-md-8 mb-3  ">
                   <div class="footer-nav-wrap text-white ">
                       <h2 class="green font font-weight-bold mt-5">CONTÁCTANOS</h2>
 
@@ -17,16 +17,19 @@
                       <p class="mb-2 ml-4 ">C.P. 4400</p>
                   </div>
               </div>
-              <div class="ml-3 mt-5">
-                  <div class="footer-nav-wrap text-white col-12">
-                      <div class="row col-12">
-                          <img src="{{asset('assets/img/calathea/Trazado 31519.png')}}" class=" float-right" >
+              <div class="col-md-4  col-sm-12  mt-5">
+                <div class="row ">
+                    <div class="footer-nav-wrap text-white col-12">
+                      <div class="row d-flex justify-content-sm-center">
+                          <img src="{{asset('assets/img/calathea/Trazado 31519.png')}}" class="mr-3 " >
                       </div>
-                      <div class="row col-md-12">
-                          <img src="{{asset('assets/img/calathea/facebook.png')}}" class="w-12 mr-5" >
-                          <img src="{{asset('assets/img/calathea/instagram.png')}}" class="w-12" >
+                      <div class="row col-md-12 d-flex justify-content-sm-center">
+                          <img src="{{asset('assets/img/calathea/facebook.png')}}" class="w-12 mr-3 mt-3" >
+                          <img src="{{asset('assets/img/calathea/instagram.png')}}" class="w-12 ml-3 mt-3" >
                       </div>
-                  </div>
+                    </div>
+                </div>
+                  
               </div>
               
           </div>
