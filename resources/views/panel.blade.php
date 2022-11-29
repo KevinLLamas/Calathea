@@ -4,6 +4,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <main id="main">
+    <div id="wrapper">
+
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li>
+            <a href="http://127.0.0.1:8000/panel">AGENDA</a>
+        </li>
+        <li>
+            <a href="http://127.0.0.1:8000/inicio">NOTIFICACIONES</a>
+        </li>
+    </ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+
+</div>
+<!-- /#wrapper -->
         <section id="cliens" class="container">
             <label id="label_id" hidden></label>
             <button type="button" id="btn_llamar_llenar" class="btn btn-primary" v-on:click="llenarReservacion()" hidden>Mover</button>
@@ -12,9 +30,9 @@
             <button type="button" id="btn_llamar_paqueteDia" class="btn btn-primary" v-on:click="getPaquetesDia()" hidden></button>
             
             <div class="container">
-                <button type="button" id="btn_abrir_modal_mover" class="btn btn-primary" data-toggle="modal" data-target="#moverReservacion">Cambiar</button>
-                <button type="button" id="btn_abrir_modal_editar" class="btn btn-primary" data-toggle="modal" data-target="#editarReservacion">Cambiar</button>
-                <button type="button" id="btn_abrir_modal" class="btn btn-primary" data-toggle="modal" data-target="#agregarReservacion">Cambiar</button>
+                <button type="button" id="btn_abrir_modal_mover" class="btn btn-primary" data-toggle="modal" data-target="#moverReservacion" hidden>Cambiar</button>
+                <button type="button" id="btn_abrir_modal_editar" class="btn btn-primary" data-toggle="modal" data-target="#editarReservacion" hidden>Cambiar</button>
+                <button type="button" id="btn_abrir_modal" class="btn btn-primary" data-toggle="modal" data-target="#agregarReservacion" hidden>Cambiar</button>
                 <br><br><br><br>
                 <div class="card text-left border rounded-lg shadow " style="border-radius: 1.5rem!important;">
                   <img class="card-img-top" src="holder.js/100px180/" alt="">
