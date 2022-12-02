@@ -3,19 +3,19 @@
 <div id="panel" v-cloak style="background: #FFF8F3;">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <main id="main">
     <div id="wrapper">
 
 <!-- Sidebar -->
 <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
+        
         <li>
-            <a href="http://127.0.0.1:8000/panel">AGENDA</a>
-            <i class="fas fa-cloud">iui</i>
+            <a class="fa fa-home" style="color:#FFFFFF;" href="http://127.0.0.1:8000/panel">AGENDA</a>
         </li>
         <li>
-            <a href="http://127.0.0.1:8000/inicio">NOTIFICACIONES</a>
+        <a class="fa fa-bell" style="color:#FFFFFF;" href="http://127.0.0.1:8000/panel">NOTIFICACIONES</a>
         </li>
     </ul>
 </div>

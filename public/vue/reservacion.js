@@ -56,12 +56,12 @@ new Vue({
                     $('#fecha').val(info.dateStr);
                     $("#btn_cambio_fecha").trigger("click");
                     $("#btn_llamar_paqueteDia").trigger("click");
+                    Swal.fire('Ha seleccionado una fecha, complete los datos', '', 'success')
                    /* $("#btn_llamar_limpiar").trigger("click");
                     $("#btn_abrir_modal").trigger("click");
                     $("#fecha").val(info.dateStr);*/
                   
                 },
-                editable:false,
                 eventResize: function(event, delta)
                 {
                     console.log(event);
@@ -107,6 +107,7 @@ new Vue({
                     //this.llenarReservacionMover();
                     //$("#btn_abrir_modal_mover").trigger("click");
                 }else{
+                    this.limpiar();
                     swal.fire('Atención', response.data.data, 'warning');
                     //this.setup();
                     return;
@@ -126,6 +127,7 @@ new Vue({
                     $("#btn_abrir_modal").trigger("click");
                 }else{
                     swal.fire('Atención', response.data.data, 'warning');
+                    this.limpiar();
                     return;
                 }
              }).catch(error=>{
@@ -275,7 +277,8 @@ new Vue({
             this.reservacion.nombre_persona = '';
             this.reservacion.paquete = '';
             this.reservacion.correo = '';     
-            this.paquete_sel= '';     
+            this.paquete_sel = '';     
+            this.paquetes = [];
         },
         getPaquetes: function(){
             axios.get('get_paquetes').then(response => {
