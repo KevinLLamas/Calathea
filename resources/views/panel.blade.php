@@ -34,7 +34,7 @@
                 <button type="button" id="btn_abrir_modal_editar" class="btn btn-primary" data-toggle="modal" data-target="#editarReservacion" hidden>Cambiar</button>
                 <button type="button" id="btn_abrir_modal" class="btn btn-primary" data-toggle="modal" data-target="#agregarReservacion" hidden>Cambiar</button>
                 <br><br><br><br>
-                <div class="card text-left border rounded-lg shadow " style="border-radius: 1.5rem!important;">
+                <div class="card text-left border rounded-lg shadow mt-5" style="border-radius: 1.5rem!important;">
                   <img class="card-img-top" src="holder.js/100px180/" alt="">
                   <div class="card-body">
                     <div id="calendar"></div> 
