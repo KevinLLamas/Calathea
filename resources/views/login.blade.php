@@ -43,7 +43,7 @@
                         <!-- Nested Row within Card Body -->
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-block bg-login-image">
-                                <img src="{{asset('assets/img/calathea/banner_principal.png')}}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                                
                             </div>
                             <div class="col-lg-6 bg-primary " >
                                 <div class="p-5">

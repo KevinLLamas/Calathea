@@ -18,15 +18,12 @@ Route::get('/', function () {
 Route::get('/inicio', function () {
     return view('Inicio');
 });
-Route::get('/panel', function () {
-    return view('panel');
-});
 Route::get('/paquetes', function () {
     return view('paquetes');
 });
 Route::get('/login', function () {
     return view('login');
-});
+})->middleware('login');
 /*Route::get('/reservacion/{paquete}', function () {
     return view('reservacion');
 });*/
@@ -49,13 +46,23 @@ Route::post('/get_paquete_dia', 'ReservacionController@get_paquete_dia');
 Route::post('/add_reservacion', 'ReservacionController@add_reservacion');
 Route::post('/get_reservacion', 'ReservacionController@get_reservacion');
 Route::get('/get_reservaciones', 'ReservacionController@get_reservaciones');
-Route::post('/mover_reservacion', 'ReservacionController@mover_reservacion');
-Route::post('/editar_reservacion', 'ReservacionController@editar_reservacion');
+
 Route::post('/get_all_paquetes_dia', 'ReservacionController@get_all_paquetes_dia');
-Route::post('/eliminar_reservacion', 'ReservacionController@eliminar_reservacion');
+
 Route::get('/get_reservaciones_cliente', 'ReservacionController@get_reservaciones_cliente');
+Route::get('logout', 'UserController@logout');
 
 
-
-
+Route::group(['middleware' => 'validar', 'web'], function()
+{
+    Route::get('/panel', function () {
+        return view('panel');
+    });
+    Route::get('/notificaciones', function () {
+        return view('notificaciones');
+    });
+    Route::post('/mover_reservacion', 'ReservacionController@mover_reservacion');
+    Route::post('/editar_reservacion', 'ReservacionController@editar_reservacion');
+    Route::post('/get_notificaciones', 'UserController@get_notificaciones');
+});
 

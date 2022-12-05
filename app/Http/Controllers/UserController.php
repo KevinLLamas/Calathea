@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Session;
 use App\Models\Usuario;
+use App\Models\Notificacion;
 class UserController extends Controller
 {
     public function login(Request $request) {
@@ -48,7 +49,13 @@ class UserController extends Controller
         }
 
     }
-
+    public function get_notificaciones(){
+        return Notificacion::with('reservacion')->get();
+    }
+    public function logout() {
+        Session::flush();
+        return redirect('/');
+    }
     private function update_session() {
         $correo = $departamento = Session::get('correo');
         $usuario = Usuario::with('departamento')->where('correo', $correo)->first();

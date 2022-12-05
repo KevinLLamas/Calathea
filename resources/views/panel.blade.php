@@ -4,6 +4,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="{{asset('assets/css/fonts.css')}}" rel="stylesheet">
     <main id="main">
     <div id="wrapper">
 
@@ -11,12 +12,18 @@
 <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
         
-        <li>
-            <a class="fa fa-home" style="color:#FFFFFF;" href="http://127.0.0.1:8000/panel">AGENDA</a>
-        </li>
-        <li>
-        <a class="fa fa-bell" style="color:#FFFFFF;" href="http://127.0.0.1:8000/panel">NOTIFICACIONES</a>
-        </li>
+        <a class="nav-link text-white my-1 mt-4" href="/panel">
+            <i class="fa fa-home"></i>
+            <span class="menu-title">AGENDA</span>
+        </a>
+        <a class="nav-link text-white my-1" href="/notificaciones">
+            <i class="fa fa-bell"></i>
+            <span class="menu-title">NOTIFICACIONES</span>
+        </a>
+        <a class="nav-link text-white my-1" href="/logout">
+            <i class="fa fa-sign-out"></i>
+            <span class="menu-title">CERRAR SESIÓN</span>
+        </a>
     </ul>
 </div>
 <!-- /#sidebar-wrapper -->
@@ -36,7 +43,7 @@
                 <button type="button" id="btn_abrir_modal_editar" class="btn btn-primary" data-toggle="modal" data-target="#editarReservacion" hidden>Cambiar</button>
                 <button type="button" id="btn_abrir_modal" class="btn btn-primary" data-toggle="modal" data-target="#agregarReservacion" hidden>Cambiar</button>
                 <br><br><br><br>
-                <div class="card text-left border rounded-lg shadow " style="border-radius: 1.5rem!important;">
+                <div class="card text-left border rounded-lg shadow mt-5" style="border-radius: 1.5rem!important;">
                   <img class="card-img-top" src="holder.js/100px180/" alt="">
                   <div class="card-body">
                     <div id="calendar"></div> 
