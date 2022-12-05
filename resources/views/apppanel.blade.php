@@ -27,6 +27,7 @@
   <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
   <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
   <link rel="stylesheet" href="{{asset('assets/css/sidebar.css')}}">
+  <script src="{{asset('assets/js/vue.js')}}"></script>
   <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.css" /-->
 
   <!-- Template Main CSS File -->
@@ -42,7 +43,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales-all.js"></script>
-    <script src="{{asset('assets/js/vue.js')}}"></script>
+ 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>

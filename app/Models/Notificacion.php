@@ -7,7 +7,7 @@ class Notificacion extends Model
     protected $primaryKey = 'id';
     public $timestamps = false;
 
-    public function id_reservacion(){
+    public function reservacion(){
     	return $this->hasOne('App\Models\Reservacion', 'id', 'id_reservacion');
     }
 }
