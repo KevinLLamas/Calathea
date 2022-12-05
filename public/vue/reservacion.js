@@ -56,12 +56,12 @@ new Vue({
                     $('#fecha').val(info.dateStr);
                     $("#btn_cambio_fecha").trigger("click");
                     $("#btn_llamar_paqueteDia").trigger("click");
+                    Swal.fire('Ha seleccionado una fecha, complete los datos', '', 'success')
                    /* $("#btn_llamar_limpiar").trigger("click");
                     $("#btn_abrir_modal").trigger("click");
                     $("#fecha").val(info.dateStr);*/
                   
                 },
-                editable:false,
                 eventResize: function(event, delta)
                 {
                     console.log(event);
@@ -107,6 +107,7 @@ new Vue({
                     //this.llenarReservacionMover();
                     //$("#btn_abrir_modal_mover").trigger("click");
                 }else{
+                    this.limpiar();
                     swal.fire('Atención', response.data.data, 'warning');
                     //this.setup();
                     return;
@@ -126,6 +127,7 @@ new Vue({
                     $("#btn_abrir_modal").trigger("click");
                 }else{
                     swal.fire('Atención', response.data.data, 'warning');
+                    this.limpiar();
                     return;
                 }
              }).catch(error=>{
@@ -173,26 +175,36 @@ new Vue({
                 correo: this.reservacion.correo
             }).then(response => {
                 if(response.data.ok){
-                    //Swal.fire('Listo, se le envió un correo con instrucciones para completar su reservación.', '', 'success')
-                    Swal.fire({
-                        title: '',
-                        icon: '',
-                        
-                        html:
-                          '<img src="/assets/img/calathea/Trazado 31519.png" alt="logo" class="w-25" style="font-family:'+"'gotham-rounded-medium'"+';width: 15%!important;"><br><br>'+
-                          '<h4 style="color:white"><b>Tu Pre Reservación ha sido hecha</b></h4>'+
-                          '<h4 style="color:white">Recibirás un mail de confirmación <br>A tu correo de contacto<h4>',
-                        color: "#fff",
-                        background: '#84C5B8',
-                        showCloseButton: true,
-                        showCancelButton: false,
-                        focusConfirm: false,
-                        confirmButtonColor: "#E9590B",
-                        confirmButtonText:
-                          '<i class="fa fa-thumbs-up"></i>Regresar',
-                      });  
-                    this.setup();
-                    this.limpiar();
+
+                    axios.post('/send_email', {
+                        name: this.reservacion.nombre_persona,
+                        email: this.reservacion.correo,
+                        subject: 'Termina de Reservar',
+                        msg: 'Tu prere'
+                    }).then(response => {
+                        if(response.data.ok){                            
+                            //Swal.fire('Listo, se le envió un correo con instrucciones para completar su reservación.', '', 'success')
+                            Swal.fire({
+                                title: '',
+                                icon: '',                                
+                                html:
+                                '<img src="/assets/img/calathea/Trazado 31519.png" alt="logo" class="w-25" style="font-family:'+"'gotham-rounded-medium'"+';width: 15%!important;"><br><br>'+
+                                '<h4 style="color:white"><b>Tu Pre Reservación ha sido hecha</b></h4>'+
+                                '<h4 style="color:white">Recibirás un mail de confirmación <br>A tu correo de contacto<h4>',
+                                color: "#fff",
+                                background: '#84C5B8',
+                                showCloseButton: true,
+                                showCancelButton: false,
+                                focusConfirm: false,
+                                confirmButtonColor: "#E9590B",
+                                confirmButtonText:
+                                '<i class="fa fa-thumbs-up"></i>Regresar',
+                            });  
+                            this.setup();
+                            this.limpiar();
+                        }
+                        console.log(response);
+                    });
                 }
                 console.log(response);
             });
@@ -265,7 +277,8 @@ new Vue({
             this.reservacion.nombre_persona = '';
             this.reservacion.paquete = '';
             this.reservacion.correo = '';     
-            this.paquete_sel= '';     
+            this.paquete_sel = '';     
+            this.paquetes = [];
         },
         getPaquetes: function(){
             axios.get('get_paquetes').then(response => {

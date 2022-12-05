@@ -10,6 +10,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Favicons -->
+  
   <link href="{{asset('assets/img/calathea/Trazado 27181.png')}}" rel="icon">
   <link href="{{asset('assets/img/calathea/Trazado 27181.png')}}" rel="apple-touch-icon">
 

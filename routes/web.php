@@ -33,11 +33,12 @@ Route::get('/login', function () {
 Route::get('/reservacion/{fecha}/{paquete}', 'ReservacionController@redireccion');
 
 
-Route::post('send_email', 'ContactController@contactSubmit')->name('contact.submit');
+Route::post('send_email', 'ContactController@contactSubmit');
 
 Route::post('/login', 'UserController@login');
 Route::get('/getSession', 'UserController@getSession');
 Route::get('/room_chat', function () {return view('chat');});
+Route::get('/mail', function () {return view('emails/contactmail');});
 Route::get('/get_mensajes', 'MensajeController@get_mensajes');
 Route::post('/save_mensaje', 'MensajeController@save_mensaje');
 

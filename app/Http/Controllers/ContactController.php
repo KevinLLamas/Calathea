@@ -16,8 +16,8 @@ class ContactController extends Controller
             'msg' => $request->msg,
         ], function($mail) use($request){
             
-            $mail->from($request->email, $request->name);
-            $mail->to(env('MAIL_FROM_ADDRESS'))->subject($request->subject);
+            $mail->from(env('MAIL_FROM_ADDRESS'), $request->name);
+            $mail->to($request->email)->subject($request->subject);
         });
 
         return \response()->json([
