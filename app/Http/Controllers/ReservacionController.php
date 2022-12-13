@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
 use App\Models\Reservacion;
 use App\Models\Paquete;
+use App\Models\Notificaciones;
 class ReservacionController extends Controller
 {
     public function get_reservaciones() {
@@ -173,6 +174,13 @@ class ReservacionController extends Controller
         $reservacion->correo = $request->input("correo");
         $reservacion->save();
 
+        $notificacion = new Notificacion;
+        $notificacion->mensaje = $request->input("nombre_persona")." ha creado una nueva reservación";
+        $notificacion->id_reservacion = $reservacion->id;
+        $notificacion->leida = "0";
+        $notificacion->tipo = "nueva";
+        $reservacion->save();
+
         return response()->json([
             'ok' => true,
             'data' => $reservacion
@@ -198,6 +206,14 @@ class ReservacionController extends Controller
         $reservacion->correo = $request->input("correo");
         $reservacion->es_confirmada = $request->input("es_confirmada");
         $reservacion->save();
+
+        $notificacion = new Notificacion;
+        $notificacion->mensaje = $request->input("nombre_persona")." ha editado una reservación";
+        $notificacion->id_reservacion = $reservacion->id;
+        $notificacion->leida = "0";
+        $notificacion->tipo = "edicion";
+        $reservacion->save();
+
         return response()->json([
             'ok' => true,
             'data' => $reservacion

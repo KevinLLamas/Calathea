@@ -61,7 +61,33 @@
         <section id="galeria" class="container-fluid text-center">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="{{asset('assets/img/calathea/galeria.png')}}" class="img-fluid" alt="">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="{{asset('assets/img/calathea/carousel/Calathea_001.jpg')}}" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="{{asset('assets/img/calathea/carousel/Calathea_002.jpg')}}" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="{{asset('assets/img/calathea/carousel/Calathea_003.jpg')}}" alt="Third slide">
+                        </div>
+                        <!--div class="carousel-item">
+                          <img class="d-block w-100" src="{{asset('assets/img/calathea/carousel/Calathea_004.jpg')}}" alt="Fourth slide">
+                        </div-->
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="{{asset('assets/img/calathea/carousel/Calathea_005.jpg')}}" alt="Five slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
                     <img src="{{asset('assets/img/calathea/izq.png')}}" class="img-fluid" alt="">
                     <img src="{{asset('assets/img/calathea/lets_party.png')}}" class="img-fluid" alt="">
                 </div>
