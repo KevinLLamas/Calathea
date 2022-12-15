@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
 use App\Models\Reservacion;
 use App\Models\Paquete;
-use App\Models\Notificaciones;
+use App\Models\Notificacion;
 class ReservacionController extends Controller
 {
     public function get_reservaciones() {
