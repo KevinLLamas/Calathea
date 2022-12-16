@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
 use App\Models\Reservacion;
 use App\Models\Paquete;
-use App\Models\Notificaciones;
+use App\Models\Notificacion;
 class ReservacionController extends Controller
 {
     public function get_reservaciones() {
@@ -175,11 +175,11 @@ class ReservacionController extends Controller
         $reservacion->save();
 
         $notificacion = new Notificacion;
-        $notificacion->mensaje = $request->input("nombre_persona")." ha creado una nueva reservación";
+        $notificacion->mensaje = "Se ha creado una nueva reservación a nombre de ".$request->input("nombre_persona");
         $notificacion->id_reservacion = $reservacion->id;
         $notificacion->leida = "0";
         $notificacion->tipo = "nueva";
-        $reservacion->save();
+        $notificacion->save();
 
         return response()->json([
             'ok' => true,
@@ -207,12 +207,21 @@ class ReservacionController extends Controller
         $reservacion->es_confirmada = $request->input("es_confirmada");
         $reservacion->save();
 
-        $notificacion = new Notificacion;
-        $notificacion->mensaje = $request->input("nombre_persona")." ha editado una reservación";
-        $notificacion->id_reservacion = $reservacion->id;
-        $notificacion->leida = "0";
-        $notificacion->tipo = "edicion";
-        $reservacion->save();
+        if($reservacion->es_confirmada == 'Si'){
+            $notificacion = new Notificacion;
+            $notificacion->mensaje = "Se ha confirmado la reservación a nombre de: ".$request->input("nombre_persona");
+            $notificacion->id_reservacion = $reservacion->id;
+            $notificacion->leida = "0";
+            $notificacion->tipo = "edicion";
+            $notificacion->save();
+        }else{
+            $notificacion = new Notificacion;
+            $notificacion->mensaje = "Se ha editado una reservación a nombre de: ".$request->input("nombre_persona");
+            $notificacion->id_reservacion = $reservacion->id;
+            $notificacion->leida = "0";
+            $notificacion->tipo = "edicion";
+            $notificacion->save();
+        }
 
         return response()->json([
             'ok' => true,

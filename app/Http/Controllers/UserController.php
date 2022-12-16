@@ -50,7 +50,7 @@ class UserController extends Controller
 
     }
     public function get_notificaciones(){
-        return Notificacion::with('reservacion')->get();
+        return Notificacion::with('reservacion')->orderBy('id', 'DESC')->get();
     }
     public function logout() {
         Session::flush();

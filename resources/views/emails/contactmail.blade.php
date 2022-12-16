@@ -12,7 +12,8 @@
 
     <p>Para realizar tu reservación es necesario pagar el 50% de total de la renta a la cuenta BANORTE</p>
     
-    <b>CUENTA</b> 1147888104 <b>CLABE</b> 072320011478881040
+    <b>CUENTA</b> 1147888104 <br/> <b>EMPRESA</b> ARPOMEX, S.A. DE C.V.<br/>
+    <b>CLABE</b> 072320011478881040<br/> 
     <p>Enviar el comprobante de pago <b>via WhatsApp</b> 3319902653</p>
     
     Esperar la confirmación del deposito<br/> 

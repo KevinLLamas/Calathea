@@ -53,8 +53,7 @@ Route::get('/get_reservaciones_cliente', 'ReservacionController@get_reservacione
 Route::get('logout', 'UserController@logout');
 
 
-Route::group(['middleware' => 'validar', 'web'], function()
-{
+
     Route::get('/panel', function () {
         return view('panel');
     });
@@ -64,5 +63,5 @@ Route::group(['middleware' => 'validar', 'web'], function()
     Route::post('/mover_reservacion', 'ReservacionController@mover_reservacion');
     Route::post('/editar_reservacion', 'ReservacionController@editar_reservacion');
     Route::post('/get_notificaciones', 'UserController@get_notificaciones');
-});
+
 

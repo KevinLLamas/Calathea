@@ -33,7 +33,7 @@
                 <br><br><br><br>
                 <div class="card text-left border rounded-lg shadow mt-5" style="border-radius: 1.5rem!important;">
                   <div class="card-body text-center">
-                        <h3>Noficiaciones</h3>
+                        <h3>Notificaciones</h3>
                         <table class="table">
                             <thead>
                                 <tr>
@@ -52,7 +52,7 @@
                                 <td class="text-secondary">@{{notificacion.reservacion.correo}}</td>
                                 <td class="text-secondary">@{{notificacion.reservacion.fecha}}</td>
                                 <td class="text-secondary">@{{notificacion.reservacion.es_confirmada}}</td>
-                                <td class="text-secondary"><a name="" id="" class="btn btn-primary" href="#" role="button">Ver</a></td>
+                                <td class="text-secondary"><a name="" id="" class="btn btn-primary" href="/panel" role="button">Ver</a></td>
                             </tr>
                             </tbody>
                         </table>
